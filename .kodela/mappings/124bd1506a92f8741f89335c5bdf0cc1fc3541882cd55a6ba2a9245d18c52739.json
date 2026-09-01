@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "1.1.0",
+  "filePathHash": "124bd1506a92f8741f89335c5bdf0cc1fc3541882cd55a6ba2a9245d18c52739",
+  "updatedAt": "2026-09-01T06:49:27.631Z",
+  "mappings": [
+    {
+      "entryId": "36c74013-3146-48cb-9914-178ed504cf76",
+      "lineRange": {
+        "start": 1,
+        "end": 119
+      },
+      "confidence": 0.55,
+      "status": "uncertain"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "sessionId": "66c1228b-5bdd-44b8-91c5-4cb2e2678f78",
+  "intent": "Auto-annotate watcher batch for 1 file: rag.db.",
+  "reasoning": "Added rag.db.\n\nSession scope: 1 file changed (+73/-0 lines), risk low, confidence 70%.\n\nNo explicit test execution results were captured in session artifacts.",
+  "goal": "Auto-annotate watcher batch for 1 file: rag.db.",
+  "filesChanged": [
+    "rag.db"
+  ],
+  "totalLinesAdded": 73,
+  "totalLinesRemoved": 0,
+  "dominantChangeType": "addition",
+  "riskLevel": "low",
+  "avgConfidence": 0.7,
+  "entryCount": 1,
+  "synthesisedAt": "2026-09-01T07:01:30.387Z",
+  "intentSource": "user-goal",
+  "memory": {
+    "whatChanged": [
+      "Added rag.db",
+      "Changed 1 file (+73/-0 lines).",
+      "Primary files: rag.db."
+    ],
+    "whyItMatters": "Added rag.db",
+    "validationContext": "No explicit test execution results were captured in session artifacts.",
+    "nextActions": [
+      "Review 1 uncertain annotation to confirm intent and mapping accuracy."
+    ]
+  }
+}

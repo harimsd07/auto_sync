@@ -1,10 +1,10 @@
 from fastapi import APIRouter, Depends, HTTPException, status
 from typing import List, Optional
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy import select, delete
 from app.core.database import get_db
-from app.models.models import Conversation, Message
+from app.models.models import Conversation, Message, MessageFeedback
 
 router = APIRouter()
 
@@ -26,6 +26,10 @@ class MessageOut(BaseModel):
     content: str
     msg_metadata: Optional[dict] = None
     created_at: str
+
+class FeedbackRequest(BaseModel):
+    rating: int = Field(..., ge=1, le=5)
+    feedback_text: Optional[str] = None
 
 @router.post("/", response_model=ConversationOut)
 async def create_conversation(req: ConversationCreate, db: AsyncSession = Depends(get_db)):
@@ -82,6 +86,26 @@ async def get_conversation_messages(conv_id: str, db: AsyncSession = Depends(get
         }
         for m in msgs
     ]
+
+@router.post("/messages/{message_id}/feedback")
+async def record_message_feedback(
+    message_id: str,
+    fb: FeedbackRequest,
+    db: AsyncSession = Depends(get_db)
+):
+    result = await db.execute(select(Message).where(Message.id == message_id))
+    msg = result.scalars().first()
+    if not msg:
+        raise HTTPException(status_code=404, detail="Message not found")
+
+    feedback = MessageFeedback(
+        message_id=message_id,
+        rating=fb.rating,
+        feedback_text=fb.feedback_text
+    )
+    db.add(feedback)
+    await db.commit()
+    return {"status": "success", "message_id": message_id, "rating": fb.rating}
 
 @router.delete("/{conv_id}", status_code=status.HTTP_204_NO_CONTENT)
 async def delete_conversation(conv_id: str, db: AsyncSession = Depends(get_db)):

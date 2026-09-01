@@ -1,0 +1,53 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "49161641-52e6-412c-9f86-448850c74fd8",
+  "filePath": "/home/irah/kodela_autosync/backend/tests/test_api.py",
+  "astAnchor": null,
+  "contentHash": "bfc0322de33051281f1fb0ef1f0d40a8df98b56dea4eb5dd0bfdd63603d1dfed",
+  "lineRange": {
+    "start": 1,
+    "end": 3
+  },
+  "note": "kdl-aesgcm:v1:8636a1b0:TwqPV8a-keCShq0p:Sf5awrpgex9IDI3Rch5ndA:p9-lFO5rbo22nvR979F6OkQJx63rzAh7EZxRQ-gt2xKfRigGLo5539m_mq3vq1HoJigC5cvReMTnRKb0EJI8DnBP5HALuDY5expz3-qkd7zBYj6RBWmyedg8xHMuW4pnUpBklwHqF0QK6-Y8jQDA4pESwv-6t9Vps4i496382UE9",
+  "author": "ai-agent",
+  "createdAt": "2026-09-01T06:52:24.453Z",
+  "updatedAt": "2026-09-01T06:52:24.453Z",
+  "severity": "low",
+  "tags": [
+    "per-file-context",
+    "session:ccce6ca7-6ec9-49f1-b7f8-bbb56ce74e3f",
+    "ai",
+    "antigravity-assistant"
+  ],
+  "source": "ai",
+  "aiTool": "antigravity-assistant",
+  "confidence": 0.95,
+  "attributionConfidence": 0.95,
+  "canUpgradeAttribution": false,
+  "status": "mapped",
+  "reviewRequired": false,
+  "contentDrift": "low",
+  "origin": {
+    "type": "ai",
+    "summary": "Updated async fixture decorator for pytest compatibility",
+    "tool": "antigravity-assistant",
+    "sessionId": "ccce6ca7-6ec9-49f1-b7f8-bbb56ce74e3f"
+  },
+  "sessionId": "ccce6ca7-6ec9-49f1-b7f8-bbb56ce74e3f",
+  "scope": "test",
+  "trustLevel": "high",
+  "sourceType": "sdk",
+  "ingestion": "deterministic",
+  "summary": {
+    "intent": "Updated async fixture decorator for pytest compatibility",
+    "changeType": "fix",
+    "risk": "low",
+    "shortSummary": "2+/1-"
+  },
+  "rawContext": {
+    "linesAdded": 2,
+    "linesRemoved": 1,
+    "fileCount": 1,
+    "sessionId": "ccce6ca7-6ec9-49f1-b7f8-bbb56ce74e3f"
+  }
+}

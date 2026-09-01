@@ -1,0 +1,134 @@
+{
+  "schemaVersion": "1.0",
+  "captureMethod": "watcher",
+  "exportedAt": "2026-09-01T07:03:22.156Z",
+  "actor": {
+    "tool": "antigravity-assistant"
+  },
+  "intent": {
+    "userPrompt": "make improvements to rag chatbot project including file upload support, hybrid search, message feedback, and security middleware",
+    "branchContext": "main",
+    "source": "hook",
+    "confidence": 0.93
+  },
+  "changes": {
+    "filesChanged": 6,
+    "linesAdded": 887,
+    "linesRemoved": 674,
+    "files": [
+      {
+        "path": "/home/irah/kodela_autosync/backend/app/core/security.py",
+        "linesAdded": 32,
+        "linesRemoved": 0,
+        "intent": "Created security authentication utility module",
+        "risk": "low",
+        "whyChanged": "Created security authentication utility module",
+        "problemSolved": "Provide JWT token encoding/decoding and secure bcrypt password hashing utilities",
+        "modifiedBy": {
+          "source": "ai",
+          "tool": "antigravity-assistant",
+          "model": null,
+          "author": "ai-agent"
+        },
+        "reviewRequired": false
+      },
+      {
+        "path": "/home/irah/kodela_autosync/backend/app/services/vector_store.py",
+        "linesAdded": 93,
+        "linesRemoved": 69,
+        "intent": "Added hybrid search scoring algorithm",
+        "risk": "low",
+        "whyChanged": "Added hybrid search scoring algorithm",
+        "problemSolved": "Implement hybrid scoring combining vector similarity and lexical term matching",
+        "modifiedBy": {
+          "source": "ai",
+          "tool": "antigravity-assistant",
+          "model": null,
+          "author": "ai-agent"
+        },
+        "reviewRequired": false
+      },
+      {
+        "path": "/home/irah/kodela_autosync/backend/app/api/v1/endpoints/documents.py",
+        "linesAdded": 185,
+        "linesRemoved": 119,
+        "intent": "Added file upload endpoint to documents API",
+        "risk": "low",
+        "whyChanged": "Added file upload endpoint to documents API",
+        "problemSolved": "Support file uploads (PDF, TXT, MD) using pypdf and multipart form parsing",
+        "modifiedBy": {
+          "source": "ai",
+          "tool": "antigravity-assistant",
+          "model": null,
+          "author": "ai-agent"
+        },
+        "reviewRequired": false
+      },
+      {
+        "path": "/home/irah/kodela_autosync/backend/app/api/v1/endpoints/conversations.py",
+        "linesAdded": 115,
+        "linesRemoved": 91,
+        "intent": "Added feedback endpoint for AI responses",
+        "risk": "low",
+        "whyChanged": "Added feedback endpoint for AI responses",
+        "problemSolved": "Allow users to submit thumbs up/down (1-5 rating) feedback on assistant responses",
+        "modifiedBy": {
+          "source": "ai",
+          "tool": "antigravity-assistant",
+          "model": null,
+          "author": "ai-agent"
+        },
+        "reviewRequired": false
+      },
+      {
+        "path": "/home/irah/kodela_autosync/frontend/index.html",
+        "linesAdded": 385,
+        "linesRemoved": 340,
+        "intent": "Enhanced web app interface for file ingestion and user feedback",
+        "risk": "low",
+        "whyChanged": "Enhanced web app interface for file ingestion and user feedback",
+        "problemSolved": "Add drag-and-drop PDF file upload tab, message feedback rating buttons, and score indicator badges",
+        "modifiedBy": {
+          "source": "ai",
+          "tool": "antigravity-assistant",
+          "model": null,
+          "author": "ai-agent"
+        },
+        "reviewRequired": false
+      },
+      {
+        "path": "/home/irah/kodela_autosync/backend/tests/test_api.py",
+        "linesAdded": 77,
+        "linesRemoved": 55,
+        "intent": "Expanded automated test suite for new improvements",
+        "risk": "low",
+        "whyChanged": "Expanded automated test suite for new improvements",
+        "problemSolved": "Add automated unit tests for binary file upload endpoint, hybrid search, and message feedback ratings",
+        "modifiedBy": {
+          "source": "ai",
+          "tool": "antigravity-assistant",
+          "model": null,
+          "author": "ai-agent"
+        },
+        "reviewRequired": false
+      }
+    ],
+    "actorBreakdown": {
+      "ai": 6,
+      "human": 0,
+      "mixed": 0
+    }
+  },
+  "duration": 254,
+  "startedAt": "2026-09-01T06:59:07.668Z",
+  "endedAt": "2026-09-01T07:03:22.152Z",
+  "risk": "medium",
+  "reviewRequired": false,
+  "humanVerified": false,
+  "totalAnnotations": 6,
+  "avgConfidence": 0.95,
+  "clusters": [],
+  "sessionId": "3da48302-9493-4361-8b39-73ebc5b0553a",
+  "handoffSummary": "make improvements to rag chatbot project including file upload support, hybrid search, message feedback, and security middleware. Refactored in /home/irah/kodela_autosync/frontend/index.html, /home/irah/kodela_autosync/backend/app/api/v1/endpoints/documents.py, /home/irah/kodela_autosync/backend/app/api/v1/endpoints/conversations.py. Risk: medium — modifies API surface.",
+  "perFileContextComplete": true
+}

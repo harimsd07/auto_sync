@@ -1,0 +1,53 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "6f16bb6a-0619-49bd-8beb-7ec7371b35df",
+  "filePath": "/home/irah/kodela_autosync/backend/tests/test_api.py",
+  "astAnchor": null,
+  "contentHash": "bfc0322de33051281f1fb0ef1f0d40a8df98b56dea4eb5dd0bfdd63603d1dfed",
+  "lineRange": {
+    "start": 1,
+    "end": 132
+  },
+  "note": "kdl-aesgcm:v1:8636a1b0:k_QFvL8Rs9x_p-jZ:EdEs3o02GSkbKLQyFuFZ-Q:4mhI02VenzQ2xOYtPvJjM6B_njEET2eugGjJr68eSyvEg2DQgvpC4ShA1BYv6eCU2_JpOD75gstPpNvD-xUbMFH5YYd2fVv3BzKFRVSAZBClmLHYkxvq5Yiy3v5DjQcjJZA4-a-Ld_lyUBygqD0KyG6tgL_reNZFeLgyegMw7bfFFr_F0b678OlDt7wJ_PZ7-Pq0GeSPVWFv4JcPOf3AWaGPQZdCmc9Y",
+  "author": "ai-agent",
+  "createdAt": "2026-09-01T07:02:58.323Z",
+  "updatedAt": "2026-09-01T07:02:58.323Z",
+  "severity": "low",
+  "tags": [
+    "per-file-context",
+    "session:3da48302-9493-4361-8b39-73ebc5b0553a",
+    "ai",
+    "antigravity-assistant"
+  ],
+  "source": "ai",
+  "aiTool": "antigravity-assistant",
+  "confidence": 0.95,
+  "attributionConfidence": 0.95,
+  "canUpgradeAttribution": false,
+  "status": "mapped",
+  "reviewRequired": false,
+  "contentDrift": "low",
+  "origin": {
+    "type": "ai",
+    "summary": "Expanded automated test suite for new improvements",
+    "tool": "antigravity-assistant",
+    "sessionId": "3da48302-9493-4361-8b39-73ebc5b0553a"
+  },
+  "sessionId": "3da48302-9493-4361-8b39-73ebc5b0553a",
+  "scope": "test",
+  "trustLevel": "high",
+  "sourceType": "sdk",
+  "ingestion": "deterministic",
+  "summary": {
+    "intent": "Expanded automated test suite for new improvements",
+    "changeType": "refactor",
+    "risk": "low",
+    "shortSummary": "77+/55-"
+  },
+  "rawContext": {
+    "linesAdded": 77,
+    "linesRemoved": 55,
+    "fileCount": 1,
+    "sessionId": "3da48302-9493-4361-8b39-73ebc5b0553a"
+  }
+}

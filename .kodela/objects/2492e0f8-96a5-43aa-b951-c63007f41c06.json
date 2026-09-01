@@ -1,0 +1,53 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "2492e0f8-96a5-43aa-b951-c63007f41c06",
+  "filePath": "/home/irah/kodela_autosync/backend/app/api/v1/endpoints/conversations.py",
+  "astAnchor": null,
+  "contentHash": "a49cc0c2ccb83cbf8510c16a643243f18f74a7b6250ccb8fb518ac062f8d4dda",
+  "lineRange": {
+    "start": 1,
+    "end": 206
+  },
+  "note": "kdl-aesgcm:v1:8636a1b0:DEfga6nNA1P_bRY5:tyKS8Sj1YiTLwGmuW4j_3A:VKDx4arB3ACI8v5rUqnLrlj4Xm7H8irgxojZ4mqgwFvRs7oyvIN3CXDdBdnD_sj4HYObn1w_WheIQlqRf5Yo52xe4LnuSmfaACqQ-gG9-ipJMe95d7xO_gn7XBjj81XNNA-CN3wH5NmnAJfJPxhWBaY6QHpKYVnvkp2-XID5kahsVciQRgMkTgnp",
+  "author": "ai-agent",
+  "createdAt": "2026-09-01T07:02:22.684Z",
+  "updatedAt": "2026-09-01T07:02:22.684Z",
+  "severity": "low",
+  "tags": [
+    "per-file-context",
+    "session:3da48302-9493-4361-8b39-73ebc5b0553a",
+    "ai",
+    "antigravity-assistant"
+  ],
+  "source": "ai",
+  "aiTool": "antigravity-assistant",
+  "confidence": 0.95,
+  "attributionConfidence": 0.95,
+  "canUpgradeAttribution": false,
+  "status": "mapped",
+  "reviewRequired": false,
+  "contentDrift": "low",
+  "origin": {
+    "type": "ai",
+    "summary": "Added feedback endpoint for AI responses",
+    "tool": "antigravity-assistant",
+    "sessionId": "3da48302-9493-4361-8b39-73ebc5b0553a"
+  },
+  "sessionId": "3da48302-9493-4361-8b39-73ebc5b0553a",
+  "scope": "api",
+  "trustLevel": "high",
+  "sourceType": "sdk",
+  "ingestion": "deterministic",
+  "summary": {
+    "intent": "Added feedback endpoint for AI responses",
+    "changeType": "refactor",
+    "risk": "medium",
+    "shortSummary": "115+/91-"
+  },
+  "rawContext": {
+    "linesAdded": 115,
+    "linesRemoved": 91,
+    "fileCount": 1,
+    "sessionId": "3da48302-9493-4361-8b39-73ebc5b0553a"
+  }
+}

@@ -123,3 +123,428 @@
 [watch] Batch processed: 6 file(s) seen, 0 annotated, 6 skipped (2026-09-01T06:47:52.864Z)
 [watch] healed 0/0 entries in 501 files (298ms) updated=0 orphaned=0 uncertain=0
 [watch] healed 0/0 entries in 446 files (14ms) updated=0 orphaned=0 uncertain=0
+[watch] Batch processed: 425 file(s) seen, 0 annotated, 425 skipped (2026-09-01T06:48:38.574Z)
+[watch] Batch processed: 488 file(s) seen, 0 annotated, 488 skipped (2026-09-01T06:48:43.945Z)
+[kodela/watcher] WARN Batch size exceeded 500 files — flushing early to prevent overload.
+[watch] healed 0/0 entries in 501 files (115ms) updated=0 orphaned=0 uncertain=0
+[kodela/watcher] WARN Batch size exceeded 500 files — flushing early to prevent overload.
+[kodela/watcher] WARN Batch size exceeded 500 files — flushing early to prevent overload.
+[watch] healed 0/2 entries in 501 files (652ms) updated=0 orphaned=0 uncertain=2
+[watch] healed 0/0 entries in 501 files (136ms) updated=0 orphaned=0 uncertain=0
+[kodela/watcher] WARN Batch size exceeded 500 files — flushing early to prevent overload.
+[watch] healed 0/0 entries in 501 files (187ms) updated=0 orphaned=0 uncertain=0
+[kodela/watcher] WARN Batch size exceeded 500 files — flushing early to prevent overload.
+[kodela/watcher] WARN Batch size exceeded 500 files — flushing early to prevent overload.
+[kodela/watcher] WARN Batch size exceeded 500 files — flushing early to prevent overload.
+[kodela/watcher] WARN Batch size exceeded 500 files — flushing early to prevent overload.
+[watch] healed 0/0 entries in 501 files (728ms) updated=0 orphaned=0 uncertain=0
+[watch] healed 0/0 entries in 501 files (541ms) updated=0 orphaned=0 uncertain=0
+[watch] healed 0/0 entries in 501 files (308ms) updated=0 orphaned=0 uncertain=0
+[watch] healed 0/0 entries in 501 files (146ms) updated=0 orphaned=0 uncertain=0
+[kodela/watcher] WARN Batch size exceeded 500 files — flushing early to prevent overload.
+[kodela/watcher] WARN Batch size exceeded 500 files — flushing early to prevent overload.
+[watch] healed 0/0 entries in 59 files (1744ms) updated=0 orphaned=0 uncertain=0
+[watch] healed 0/0 entries in 501 files (1035ms) updated=0 orphaned=0 uncertain=0
+[watch] healed 0/0 entries in 501 files (714ms) updated=0 orphaned=0 uncertain=0
+[watch] healed 0/0 entries in 466 files (343ms) updated=0 orphaned=0 uncertain=0
+[kodela/watcher] WARN Batch size exceeded 500 files — flushing early to prevent overload.
+[kodela/watcher] WARN Batch size exceeded 500 files — flushing early to prevent overload.
+[kodela/watcher] WARN Batch size exceeded 500 files — flushing early to prevent overload.
+[kodela/watcher] WARN Batch size exceeded 500 files — flushing early to prevent overload.
+[kodela/watcher] WARN Batch size exceeded 500 files — flushing early to prevent overload.
+[kodela/watcher] WARN Batch size exceeded 500 files — flushing early to prevent overload.
+[kodela/watcher] WARN Batch size exceeded 500 files — flushing early to prevent overload.
+[kodela/watcher] WARN Batch size exceeded 500 files — flushing early to prevent overload.
+[kodela/watcher] WARN Batch size exceeded 500 files — flushing early to prevent overload.
+[kodela/watcher] WARN Batch size exceeded 500 files — flushing early to prevent overload.
+[watch] healed 0/0 entries in 501 files (2528ms) updated=0 orphaned=0 uncertain=0
+[watch] healed 0/0 entries in 501 files (2314ms) updated=0 orphaned=0 uncertain=0
+[watch] healed 0/0 entries in 501 files (2048ms) updated=0 orphaned=0 uncertain=0
+[watch] healed 0/0 entries in 501 files (1788ms) updated=0 orphaned=0 uncertain=0
+[watch] healed 0/0 entries in 501 files (1603ms) updated=0 orphaned=0 uncertain=0
+[watch] healed 0/0 entries in 501 files (1435ms) updated=0 orphaned=0 uncertain=0
+[watch] healed 0/0 entries in 501 files (1235ms) updated=0 orphaned=0 uncertain=0
+[watch] healed 0/0 entries in 501 files (1044ms) updated=0 orphaned=0 uncertain=0
+[watch] healed 0/0 entries in 501 files (892ms) updated=0 orphaned=0 uncertain=0
+[watch] healed 0/0 entries in 501 files (816ms) updated=0 orphaned=0 uncertain=0
+[watch] healed 0/0 entries in 200 files (663ms) updated=0 orphaned=0 uncertain=0
+[watch] healed 0/0 entries in 5 files (164ms) updated=0 orphaned=0 uncertain=0
+[watch] Batch processed: 6 file(s) seen, 0 annotated, 6 skipped (2026-09-01T06:49:17.089Z)
+[watch] Batch processed: 59 file(s) seen, 0 annotated, 59 skipped (2026-09-01T06:49:19.229Z)
+[watch] healed 0/0 entries in 1 file (12ms) updated=0 orphaned=0 uncertain=0
+[watch] Batch processed: 1 file(s) seen, 0 annotated, 1 skipped (2026-09-01T06:49:21.829Z)
+[watch] healed 0/1 entries in 1 file (26ms) updated=0 orphaned=0 uncertain=1
+[DRIFT ALERT] ⚡ UNCERTAIN: backend/app/services/llm_rag.py (entry 36c74013…, author: harimsd07)
+  Status changed: uncertain → uncertain
+  Run `kodela heal` to reattach or `kodela archive` to dismiss.
+[watch] Batch processed: 1 file(s) seen, 0 annotated, 1 skipped (2026-09-01T06:49:27.734Z)
+[watch] healed 0/1 entries in 1 file (25ms) updated=0 orphaned=0 uncertain=1
+[watch] Batch processed: 1 file(s) seen, 0 annotated, 1 skipped (2026-09-01T06:49:28.266Z)
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/qdrant_client/auth/__init__.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/qdrant_client/auth/bearer_auth.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/qdrant_client/auth/__init__.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/qdrant_client/auth/bearer_auth.py
+[watch] Batch processed: 188 file(s) seen, 0 annotated, 188 skipped (2026-09-01T06:49:36.474Z)
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/passlib/crypto/__init__.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/passlib/crypto/_md4.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/passlib/crypto/des.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/passlib/crypto/digest.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/passlib/crypto/__init__.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/passlib/crypto/_md4.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/passlib/crypto/des.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/passlib/crypto/digest.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/passlib/crypto/_blowfish/__init__.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/passlib/crypto/_blowfish/_gen_files.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/passlib/crypto/_blowfish/base.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/passlib/crypto/_blowfish/unrolled.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/passlib/crypto/scrypt/__init__.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/passlib/crypto/scrypt/_builtin.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/passlib/crypto/scrypt/_gen_files.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/passlib/crypto/scrypt/_salsa.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/passlib/crypto/_blowfish/__init__.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/passlib/crypto/_blowfish/_gen_files.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/passlib/crypto/_blowfish/base.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/passlib/crypto/_blowfish/unrolled.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/passlib/crypto/scrypt/__init__.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/passlib/crypto/scrypt/_builtin.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/passlib/crypto/scrypt/_gen_files.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/passlib/crypto/scrypt/_salsa.py
+[watch] Batch processed: 483 file(s) seen, 0 annotated, 483 skipped (2026-09-01T06:50:02.465Z)
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/redis/auth/err.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/redis/auth/idp.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/redis/auth/token.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/redis/auth/token_manager.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/redis/auth/err.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/redis/auth/idp.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/redis/auth/token.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/redis/auth/token_manager.py
+[watch] Batch processed: 471 file(s) seen, 0 annotated, 471 skipped (2026-09-01T06:50:04.620Z)
+[watch] Batch processed: 466 file(s) seen, 0 annotated, 466 skipped (2026-09-01T06:50:05.618Z)
+[watch] Batch processed: 499 file(s) seen, 0 annotated, 499 skipped (2026-09-01T06:50:06.706Z)
+[watch] Batch processed: 499 file(s) seen, 0 annotated, 499 skipped (2026-09-01T06:50:07.956Z)
+[watch] Batch processed: 502 file(s) seen, 0 annotated, 502 skipped (2026-09-01T06:50:08.739Z)
+[watch] Batch processed: 501 file(s) seen, 0 annotated, 501 skipped (2026-09-01T06:50:09.131Z)
+[watch] Batch processed: 481 file(s) seen, 0 annotated, 481 skipped (2026-09-01T06:50:10.261Z)
+[watch] Batch processed: 480 file(s) seen, 0 annotated, 480 skipped (2026-09-01T06:50:12.284Z)
+[watch] Batch processed: 487 file(s) seen, 0 annotated, 487 skipped (2026-09-01T06:50:12.921Z)
+[watch] Batch processed: 476 file(s) seen, 0 annotated, 476 skipped (2026-09-01T06:50:13.410Z)
+[watch] Batch processed: 465 file(s) seen, 0 annotated, 465 skipped (2026-09-01T06:50:14.438Z)
+[watch] Batch processed: 501 file(s) seen, 0 annotated, 501 skipped (2026-09-01T06:50:14.869Z)
+[watch] Batch processed: 499 file(s) seen, 0 annotated, 499 skipped (2026-09-01T06:50:14.948Z)
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/fastapi/security/__init__.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/fastapi/security/api_key.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/fastapi/security/base.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/fastapi/security/http.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/fastapi/security/oauth2.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/fastapi/security/open_id_connect_url.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/fastapi/security/utils.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/fastapi/security/__init__.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/fastapi/security/api_key.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/fastapi/security/base.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/fastapi/security/http.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/fastapi/security/oauth2.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/fastapi/security/open_id_connect_url.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/fastapi/security/utils.py
+[watch] Batch processed: 491 file(s) seen, 0 annotated, 491 skipped (2026-09-01T06:50:15.069Z)
+[watch] Batch processed: 501 file(s) seen, 0 annotated, 501 skipped (2026-09-01T06:50:15.166Z)
+[watch] Batch processed: 501 file(s) seen, 0 annotated, 501 skipped (2026-09-01T06:50:15.326Z)
+[watch] Batch processed: 501 file(s) seen, 0 annotated, 501 skipped (2026-09-01T06:50:15.414Z)
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/primitives/_cipheralgorithm.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/primitives/_modes.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/primitives/_serialization.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/primitives/cmac.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/primitives/constant_time.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/primitives/hashes.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/primitives/hmac.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/primitives/hpke.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/primitives/keywrap.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/primitives/padding.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/asn1/__init__.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/asn1/asn1.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/backends/__init__.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/bindings/__init__.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/bindings/_rust.abi3.so
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/decrepit/__init__.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/primitives/__init__.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/primitives/_asymmetric.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/primitives/_cipheralgorithm.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/primitives/_modes.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/primitives/_serialization.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/primitives/cmac.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/primitives/constant_time.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/primitives/hashes.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/primitives/hmac.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/primitives/hpke.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/primitives/keywrap.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/primitives/padding.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/primitives/poly1305.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/primitives/poly1305.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/backends/openssl/__init__.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/backends/openssl/backend.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/bindings/_rust/__init__.pyi
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/bindings/_rust/_openssl.pyi
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/bindings/_rust/asn1.pyi
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/bindings/_rust/cobblestone.pyi
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/bindings/_rust/declarative_asn1.pyi
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/bindings/_rust/exceptions.pyi
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/bindings/_rust/ocsp.pyi
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/bindings/_rust/pkcs12.pyi
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/bindings/_rust/pkcs7.pyi
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/bindings/_rust/test_support.pyi
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/bindings/_rust/x509.pyi
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/bindings/openssl/__init__.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/bindings/openssl/_conditional.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/bindings/openssl/binding.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/decrepit/ciphers/__init__.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/decrepit/ciphers/algorithms.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/decrepit/ciphers/modes.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/primitives/asymmetric/__init__.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/primitives/asymmetric/dh.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/primitives/asymmetric/dsa.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/primitives/asymmetric/ec.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/primitives/asymmetric/ed25519.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/primitives/asymmetric/ed448.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/primitives/asymmetric/mldsa.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/primitives/asymmetric/mlkem.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/primitives/asymmetric/padding.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/primitives/asymmetric/rsa.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/primitives/asymmetric/types.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/primitives/asymmetric/utils.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/primitives/asymmetric/x25519.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/primitives/asymmetric/x448.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/primitives/ciphers/__init__.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/primitives/ciphers/aead.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/primitives/ciphers/algorithms.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/primitives/ciphers/base.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/primitives/ciphers/modes.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/primitives/kdf/__init__.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/primitives/kdf/argon2.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/primitives/kdf/concatkdf.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/primitives/kdf/hkdf.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/primitives/kdf/kbkdf.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/primitives/kdf/pbkdf2.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/primitives/kdf/scrypt.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/primitives/kdf/x963kdf.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/backends/openssl/__init__.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/backends/openssl/backend.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/bindings/_rust/__init__.pyi
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/bindings/_rust/_openssl.pyi
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/bindings/_rust/asn1.pyi
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/bindings/_rust/cobblestone.pyi
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/bindings/_rust/declarative_asn1.pyi
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/bindings/_rust/exceptions.pyi
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/bindings/_rust/ocsp.pyi
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/bindings/_rust/pkcs12.pyi
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/bindings/_rust/pkcs7.pyi
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/bindings/_rust/test_support.pyi
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/bindings/_rust/x509.pyi
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/bindings/openssl/__init__.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/bindings/openssl/_conditional.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/bindings/openssl/binding.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/decrepit/ciphers/__init__.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/decrepit/ciphers/algorithms.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/decrepit/ciphers/modes.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/primitives/asymmetric/__init__.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/primitives/asymmetric/dh.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/primitives/asymmetric/dsa.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/primitives/asymmetric/ec.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/primitives/asymmetric/ed25519.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/primitives/asymmetric/ed448.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/primitives/asymmetric/mldsa.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/primitives/asymmetric/mlkem.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/primitives/asymmetric/padding.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/primitives/asymmetric/rsa.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/primitives/asymmetric/types.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/primitives/asymmetric/utils.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/primitives/asymmetric/x25519.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/primitives/asymmetric/x448.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/primitives/ciphers/__init__.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/primitives/ciphers/aead.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/primitives/ciphers/algorithms.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/primitives/ciphers/base.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/primitives/ciphers/modes.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/primitives/kdf/__init__.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/primitives/kdf/argon2.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/primitives/kdf/concatkdf.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/primitives/kdf/hkdf.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/primitives/kdf/kbkdf.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/primitives/kdf/pbkdf2.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/primitives/kdf/scrypt.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/primitives/kdf/x963kdf.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/primitives/serialization/__init__.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/primitives/serialization/base.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/primitives/serialization/pkcs12.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/primitives/serialization/pkcs7.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/primitives/serialization/ssh.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/primitives/twofactor/__init__.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/primitives/twofactor/hotp.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/primitives/twofactor/totp.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/primitives/serialization/__init__.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/primitives/serialization/base.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/primitives/serialization/pkcs12.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/primitives/serialization/pkcs7.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/primitives/serialization/ssh.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/primitives/twofactor/__init__.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/primitives/twofactor/hotp.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/primitives/twofactor/totp.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/bindings/_rust/openssl/__init__.pyi
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/bindings/_rust/openssl/aead.pyi
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/bindings/_rust/openssl/ciphers.pyi
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/bindings/_rust/openssl/cmac.pyi
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/bindings/_rust/openssl/dh.pyi
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/bindings/_rust/openssl/dsa.pyi
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/bindings/_rust/openssl/ec.pyi
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/bindings/_rust/openssl/ed25519.pyi
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/bindings/_rust/openssl/ed448.pyi
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/bindings/_rust/openssl/hashes.pyi
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/bindings/_rust/openssl/hmac.pyi
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/bindings/_rust/openssl/hpke.pyi
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/bindings/_rust/openssl/kdf.pyi
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/bindings/_rust/openssl/keys.pyi
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/bindings/_rust/openssl/keywrap.pyi
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/bindings/_rust/openssl/mldsa.pyi
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/bindings/_rust/openssl/__init__.pyi
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/bindings/_rust/openssl/aead.pyi
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/bindings/_rust/openssl/ciphers.pyi
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/bindings/_rust/openssl/cmac.pyi
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/bindings/_rust/openssl/dh.pyi
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/bindings/_rust/openssl/dsa.pyi
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/bindings/_rust/openssl/ec.pyi
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/bindings/_rust/openssl/ed25519.pyi
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/bindings/_rust/openssl/ed448.pyi
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/bindings/_rust/openssl/hashes.pyi
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/bindings/_rust/openssl/hmac.pyi
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/bindings/_rust/openssl/hpke.pyi
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/bindings/_rust/openssl/kdf.pyi
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/bindings/_rust/openssl/keys.pyi
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/bindings/_rust/openssl/keywrap.pyi
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/bindings/_rust/openssl/mldsa.pyi
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/bindings/_rust/openssl/mlkem.pyi
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/bindings/_rust/openssl/poly1305.pyi
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/bindings/_rust/openssl/rsa.pyi
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/bindings/_rust/openssl/x25519.pyi
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/bindings/_rust/openssl/x448.pyi
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/bindings/_rust/openssl/mlkem.pyi
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/bindings/_rust/openssl/poly1305.pyi
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/bindings/_rust/openssl/rsa.pyi
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/bindings/_rust/openssl/x25519.pyi
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/bindings/_rust/openssl/x448.pyi
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/openai/auth/__init__.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/openai/auth/_workload.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/openai/auth/_x509.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/openai/auth/__init__.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/openai/auth/_workload.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/openai/auth/_x509.py
+[watch] Batch processed: 495 file(s) seen, 0 annotated, 495 skipped (2026-09-01T06:50:15.683Z)
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/__about__.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/__init__.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/cobblestone.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/exceptions.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/fernet.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/utils.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/__about__.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/__init__.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/cobblestone.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/exceptions.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/fernet.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/utils.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/__init__.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/_oid.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/x509/__init__.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/x509/base.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/x509/certificate_transparency.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/x509/extensions.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/x509/general_name.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/x509/name.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/x509/ocsp.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/x509/oid.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/x509/verification.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/__init__.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/hazmat/_oid.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/x509/__init__.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/x509/base.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/x509/certificate_transparency.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/x509/extensions.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/x509/general_name.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/x509/name.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/x509/ocsp.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/x509/oid.py
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/cryptography/x509/verification.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/asn1/__init__.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/asn1/asn1.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/backends/__init__.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/bindings/__init__.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/bindings/_rust.abi3.so
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/decrepit/__init__.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/primitives/__init__.py
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/cryptography/hazmat/primitives/_asymmetric.py
+[watch] Batch processed: 477 file(s) seen, 0 annotated, 477 skipped (2026-09-01T06:50:16.042Z)
+[watch] Skipped (sensitive path): .venv/lib64/python3.14/site-packages/grpc/_cython/_credentials/roots.pem
+[watch] Skipped (sensitive path): .venv/lib/python3.14/site-packages/grpc/_cython/_credentials/roots.pem
+[watch] Batch processed: 489 file(s) seen, 0 annotated, 489 skipped (2026-09-01T06:50:17.198Z)
+[watch] healed 0/0 entries in 1 file (23ms) updated=0 orphaned=0 uncertain=0
+[watch] Batch processed: 0 file(s) seen, 0 annotated, 0 skipped (2026-09-01T06:51:52.860Z)
+[watch] healed 0/2 entries in 4 files (54ms) updated=0 orphaned=0 uncertain=2
+[watch] Batch processed: 6 file(s) seen, 0 annotated, 6 skipped (2026-09-01T06:51:54.012Z)
+[watch] healed 0/1 entries in 1 file (36ms) updated=0 orphaned=0 uncertain=1
+[DRIFT ALERT] ⚡ UNCERTAIN: backend/tests/test_api.py (entry 5a93e71a…, author: harimsd07)
+  Status changed: uncertain → uncertain
+  Run `kodela heal` to reattach or `kodela archive` to dismiss.
+[watch] Batch processed: 1 file(s) seen, 0 annotated, 1 skipped (2026-09-01T06:51:59.715Z)
+[watch] healed 0/0 entries in 2 files (17ms) updated=0 orphaned=0 uncertain=0
+[watch] Batch processed: 3 file(s) seen, 0 annotated, 3 skipped (2026-09-01T06:52:12.869Z)
+[watch] healed 0/1 entries in 1 file (39ms) updated=0 orphaned=0 uncertain=1
+[watch] Batch processed: 1 file(s) seen, 0 annotated, 1 skipped (2026-09-01T06:52:18.065Z)
+[watch] healed 0/2 entries in 2 files (55ms) updated=0 orphaned=0 uncertain=2
+[watch] Batch processed: 3 file(s) seen, 0 annotated, 3 skipped (2026-09-01T06:52:18.739Z)
+[watch] healed 0/0 entries in 2 files (16ms) updated=0 orphaned=0 uncertain=0
+[watch] AI spike detected: rag.db (73 lines, score 0.65) → .kodela/detection-log.jsonl
+[watch] Auto-annotate: created 1 entry (tool: unknown, conf: 0.50, session: 66c1228b…)
+[watch] Batch processed: 1 file(s) seen, 1 annotated, 0 skipped (2026-09-01T06:52:29.197Z)
+[watch] healed 0/1 entries in 4 files (49ms) updated=0 orphaned=0 uncertain=1
+[DRIFT ALERT] ⚡ UNCERTAIN: rag.db (entry f14ea24e…, author: harimsd07)
+  Status changed: uncertain → uncertain
+  Run `kodela heal` to reattach or `kodela archive` to dismiss.
+[watch] Batch processed: 5 file(s) seen, 0 annotated, 5 skipped (2026-09-01T06:52:31.706Z)
+[watch] healed 0/0 entries in 1 file (18ms) updated=0 orphaned=0 uncertain=0
+[watch] Batch processed: 1 file(s) seen, 0 annotated, 1 skipped (2026-09-01T06:59:12.121Z)
+[watch] healed 0/2 entries in 2 files (55ms) updated=0 orphaned=0 uncertain=2
+[watch] Batch processed: 2 file(s) seen, 0 annotated, 2 skipped (2026-09-01T06:59:12.766Z)
+[watch] healed 0/1 entries in 1 file (39ms) updated=0 orphaned=0 uncertain=1
+[DRIFT ALERT] ⚡ UNCERTAIN: backend/app/services/vector_store.py (entry a4c1f9a1…, author: harimsd07)
+  Status changed: uncertain → uncertain
+  Run `kodela heal` to reattach or `kodela archive` to dismiss.
+[watch] Batch processed: 1 file(s) seen, 0 annotated, 1 skipped (2026-09-01T06:59:31.190Z)
+[watch] healed 0/1 entries in 1 file (42ms) updated=0 orphaned=0 uncertain=1
+[DRIFT ALERT] ⚡ UNCERTAIN: backend/app/api/v1/endpoints/documents.py (entry 77a41791…, author: harimsd07)
+  Status changed: uncertain → uncertain
+  Run `kodela heal` to reattach or `kodela archive` to dismiss.
+[watch] Auto-annotate: created 2 entries (tool: unknown, conf: 0.50, session: e7ff54c7…)
+[watch] Batch processed: 1 file(s) seen, 2 annotated, 0 skipped (2026-09-01T07:01:30.401Z)
+[watch] healed 0/2 entries in 2 files (53ms) updated=0 orphaned=0 uncertain=2
+[watch] Batch processed: 3 file(s) seen, 0 annotated, 3 skipped (2026-09-01T07:01:31.054Z)
+[watch] healed 0/1 entries in 1 file (43ms) updated=0 orphaned=0 uncertain=1
+[DRIFT ALERT] ⚡ UNCERTAIN: backend/app/api/v1/endpoints/conversations.py (entry 65bb7361…, author: harimsd07)
+  Status changed: uncertain → uncertain
+  Run `kodela heal` to reattach or `kodela archive` to dismiss.
+[watch] Batch processed: 1 file(s) seen, 0 annotated, 1 skipped (2026-09-01T07:02:16.570Z)
+[watch] healed 0/2 entries in 2 files (54ms) updated=0 orphaned=0 uncertain=2
+[watch] Batch processed: 3 file(s) seen, 0 annotated, 3 skipped (2026-09-01T07:02:17.241Z)
+[watch] healed 0/1 entries in 1 file (72ms) updated=0 orphaned=0 uncertain=1
+[DRIFT ALERT] ⚡ UNCERTAIN: frontend/index.html (entry 3d77afcc…, author: harimsd07)
+  Status changed: uncertain → uncertain
+  Run `kodela heal` to reattach or `kodela archive` to dismiss.
+[watch] Auto-annotate: created 36 entries (tool: unknown, conf: 0.50, session: e7ff54c7…)
+[watch] Batch processed: 1 file(s) seen, 36 annotated, 0 skipped (2026-09-01T07:02:37.599Z)
+[watch] healed 0/2 entries in 2 files (65ms) updated=0 orphaned=0 uncertain=2
+[watch] Batch processed: 3 file(s) seen, 0 annotated, 3 skipped (2026-09-01T07:02:38.069Z)
+[watch] healed 0/1 entries in 1 file (62ms) updated=0 orphaned=0 uncertain=1
+[watch] Batch processed: 1 file(s) seen, 0 annotated, 1 skipped (2026-09-01T07:02:53.159Z)
+[watch] healed 0/1 entries in 2 files (61ms) updated=0 orphaned=0 uncertain=1
+[watch] Batch processed: 1 file(s) seen, 0 annotated, 1 skipped (2026-09-01T07:03:03.157Z)
+[watch] healed 0/2 entries in 2 files (58ms) updated=0 orphaned=0 uncertain=2
+[watch] Batch processed: 3 file(s) seen, 0 annotated, 3 skipped (2026-09-01T07:03:03.784Z)
+[watch] healed 0/1 entries in 2 files (67ms) updated=0 orphaned=0 uncertain=1
+[watch] Batch processed: 1 file(s) seen, 0 annotated, 1 skipped (2026-09-01T07:03:05.541Z)
+[watch] healed 0/1 entries in 3 files (65ms) updated=0 orphaned=0 uncertain=1
+[watch] Batch processed: 2 file(s) seen, 0 annotated, 2 skipped (2026-09-01T07:03:07.285Z)

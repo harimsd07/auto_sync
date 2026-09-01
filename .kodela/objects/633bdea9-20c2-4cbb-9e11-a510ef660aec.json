@@ -1,0 +1,53 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "633bdea9-20c2-4cbb-9e11-a510ef660aec",
+  "filePath": "/home/irah/kodela_autosync/backend/app/api/v1/endpoints/documents.py",
+  "astAnchor": null,
+  "contentHash": "65b0690784cb84b0707a818858b57bd4f1a8d67bb4b5f1639ca691649c8a2d8a",
+  "lineRange": {
+    "start": 1,
+    "end": 304
+  },
+  "note": "kdl-aesgcm:v1:8636a1b0:80qNp4TjymSD9VdF:d_0gOEyo0naHMcoTyWIjrw:zrBU-E4eYCyDyQ97f20JfW1xa-fAlg3KWRdZTm-IC_u1qxEyXKMHRgWBzlDmkF7UtAu1V00EJi6BmKficrxCYSkunC1ThPMzKZ6UxL15uwKzt1It3Z_fkHXMQ8fPSnZzwinRfv_8zt2mWNqSfbKu4Q_9Xx5m5hAebrRMEZeHvbW3DHoFApc",
+  "author": "ai-agent",
+  "createdAt": "2026-09-01T07:02:06.460Z",
+  "updatedAt": "2026-09-01T07:02:06.460Z",
+  "severity": "low",
+  "tags": [
+    "per-file-context",
+    "session:3da48302-9493-4361-8b39-73ebc5b0553a",
+    "ai",
+    "antigravity-assistant"
+  ],
+  "source": "ai",
+  "aiTool": "antigravity-assistant",
+  "confidence": 0.95,
+  "attributionConfidence": 0.95,
+  "canUpgradeAttribution": false,
+  "status": "mapped",
+  "reviewRequired": false,
+  "contentDrift": "low",
+  "origin": {
+    "type": "ai",
+    "summary": "Added file upload endpoint to documents API",
+    "tool": "antigravity-assistant",
+    "sessionId": "3da48302-9493-4361-8b39-73ebc5b0553a"
+  },
+  "sessionId": "3da48302-9493-4361-8b39-73ebc5b0553a",
+  "scope": "api",
+  "trustLevel": "high",
+  "sourceType": "sdk",
+  "ingestion": "deterministic",
+  "summary": {
+    "intent": "Added file upload endpoint to documents API",
+    "changeType": "refactor",
+    "risk": "medium",
+    "shortSummary": "185+/119-"
+  },
+  "rawContext": {
+    "linesAdded": 185,
+    "linesRemoved": 119,
+    "fileCount": 1,
+    "sessionId": "3da48302-9493-4361-8b39-73ebc5b0553a"
+  }
+}

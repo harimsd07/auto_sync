@@ -1,3 +1,4 @@
+import re
 import numpy as np
 from typing import List, Dict, Any, Optional
 from app.core.config import settings
@@ -37,23 +38,49 @@ class InMemoryVectorStore:
         }
         return vector_id
 
-    async def search(self, query_text: str, top_k: int = 5, filter_user_id: Optional[str] = None) -> List[Dict[str, Any]]:
+    def _calculate_keyword_score(self, query_terms: List[str], text: str) -> float:
+        """Calculates normalized keyword term-frequency score."""
+        if not query_terms or not text:
+            return 0.0
+        text_lower = text.lower()
+        matches = sum(1 for term in query_terms if term in text_lower)
+        return matches / max(1, len(query_terms))
+
+    async def search(
+        self,
+        query_text: str,
+        top_k: int = 5,
+        filter_user_id: Optional[str] = None,
+        vector_weight: float = 0.7,
+        keyword_weight: float = 0.3
+    ) -> List[Dict[str, Any]]:
         if not self.vectors:
             return []
             
         query_vector = np.array(await self.get_embedding(query_text))
+        query_terms = [w.lower() for w in re.findall(r'\w+', query_text) if len(w) > 2]
+        
         results = []
 
         for vector_id, item in self.vectors.items():
             if filter_user_id and item["metadata"].get("user_id") != filter_user_id:
                 continue
                 
+            # 1. Vector similarity score (Cosine)
             doc_vec = np.array(item["vector"])
-            similarity = float(np.dot(query_vector, doc_vec))
+            vec_score = float(np.dot(query_vector, doc_vec))
+            
+            # 2. Lexical keyword score
+            kw_score = self._calculate_keyword_score(query_terms, item["text"])
+            
+            # 3. Hybrid weighted score
+            final_hybrid_score = (vec_score * vector_weight) + (kw_score * keyword_weight)
             
             results.append({
                 "vector_id": vector_id,
-                "score": similarity,
+                "score": final_hybrid_score,
+                "vector_score": round(vec_score, 4),
+                "keyword_score": round(kw_score, 4),
                 "content": item["text"],
                 "metadata": item["metadata"]
             })

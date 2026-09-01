@@ -8,16 +8,16 @@
     "start": 1,
     "end": 50
   },
-  "note": "kdl-aesgcm:v1:8636a1b0:i5zP4lDOybf6rytX:8z2IxNUAF0txrYn-ukXEmg:JCBw2MmWdOnBJfICVNfdVUFmPSkJYtR5ifvMFUcC5Xs_4EPTo4sv9myRYZriA5xPw4zDiteIT4WUEhg",
+  "note": "kdl-aesgcm:v1:8636a1b0:znJIFe1RV8wtEHyO:ndwnkZhSHmFit6Ji_LSk1A:qTbOX0Uwf5HxlSeDZI3RJ4QOHLIRkwy7TOvg59Gy4r6pwTz-o5GzvxDPy2Z5DuYWPLdqHuowh_aBnuE",
   "author": "harimsd07",
   "createdAt": "2026-09-01T06:44:26.315Z",
-  "updatedAt": "2026-09-01T06:44:26.315Z",
+  "updatedAt": "2026-09-01T06:48:59.890Z",
   "severity": "low",
   "tags": [
     "auto"
   ],
   "source": "unknown",
-  "confidence": 0.54,
+  "confidence": 0.7,
   "attributionConfidence": 0,
   "canUpgradeAttribution": true,
   "classificationScore": 0.54,
@@ -81,6 +81,15 @@
   "contentDrift": "low",
   "sessionId": "f093598c-5cc1-4e67-a4b6-9970588c6d5b",
   "scope": "general",
+  "reasoning": {
+    "intent": "Auto-annotated: Updated configuration in docker-compose.yml",
+    "reasoning": "",
+    "alternatives": [],
+    "confidence": "low",
+    "extractedAt": "2026-09-01T06:48:59.890Z",
+    "extractionMethod": "diff-inference",
+    "source": "heuristic"
+  },
   "trustLevel": "low",
   "sourceType": "watcher",
   "ingestion": "heuristic",

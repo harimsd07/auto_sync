@@ -1,0 +1,2 @@
+{"id":"cb531678-db67-461d-99d2-2d40a406b509","sessionId":"66c1228b-5bdd-44b8-91c5-4cb2e2678f78","role":"user","text":"Auto-annotate watcher batch for 1 file: rag.db.","ts":"2026-09-01T06:52:29.182Z","seq":1,"source":"watch-auto-annotate"}
+{"id":"4d979210-3f8b-4620-a344-985f2009c566","sessionId":"66c1228b-5bdd-44b8-91c5-4cb2e2678f78","role":"assistant","text":"Captured file activity for 1 file: rag.db.","ts":"2026-09-01T06:52:29.183Z","seq":2,"source":"watch-auto-annotate","promptId":"cb531678-db67-461d-99d2-2d40a406b509"}

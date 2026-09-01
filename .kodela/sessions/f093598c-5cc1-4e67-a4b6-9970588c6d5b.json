@@ -1,6 +1,7 @@
 {
   "id": "f093598c-5cc1-4e67-a4b6-9970588c6d5b",
   "startedAt": "2026-09-01T06:44:26.310Z",
+  "endedAt": "2026-09-01T06:52:29.156Z",
   "entries": [
     "86c50922-705a-4df1-927f-0545988c37fa",
     "486a8e26-7afa-44e8-b78e-dd6dafddbc16",
@@ -15,7 +16,7 @@
     "3d77afcc-c15c-49e4-bf5b-4ab13b2c9f29"
   ],
   "goal": "Auto-annotate watcher batch for 1 file: docker-compose.yml.",
-  "aggregatedRisk": "low",
+  "aggregatedRisk": "high",
   "filesChanged": [
     "docker-compose.yml",
     "backend/app/models/models.py",
@@ -36,10 +37,10 @@
   "intent": {
     "userPrompt": "Auto-annotate watcher batch for 1 file: frontend/index.html.",
     "synthesised": "Auto-annotate watcher batch for 1 file: docker-compose.yml.",
-    "aiReasoning": "Added docker-compose.yml\n\nAdded models.py.\n\nSession scope: 11 files changed (+1279/-0 lines), risk low, confidence 54%.\n\nNo explicit test execution results were captured in session artifacts.",
+    "aiReasoning": "Added docker-compose.yml\n\nAdded models.py.\n\nSession scope: 11 files changed (+1279/-0 lines), risk high, confidence 67%.\n\nNo explicit test execution results were captured in session artifacts.",
     "source": "watch-heuristic",
-    "confidence": 0.54,
-    "updatedAt": "2026-09-01T06:47:39.788Z"
+    "confidence": 0.6727272727272727,
+    "updatedAt": "2026-09-01T06:52:29.176Z"
   },
   "git": {
     "start": {
@@ -75,7 +76,7 @@
     "added": 1279,
     "removed": 0
   },
-  "risk": "low",
-  "duration": 193456,
-  "handoffSummary": "Auto-annotate watcher batch for 1 file: docker-compose.yml. Added docker-compose.yml. Low risk — 11 files (+1279/-0 lines)."
+  "risk": "high",
+  "duration": 482846,
+  "handoffSummary": "Auto-annotate watcher batch for 1 file: docker-compose.yml. Added docker-compose.yml. High risk — 11 files (+1279/-0 lines)."
 }

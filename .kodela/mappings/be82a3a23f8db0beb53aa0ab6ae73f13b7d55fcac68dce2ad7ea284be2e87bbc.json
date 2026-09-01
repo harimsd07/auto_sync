@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.1.0",
   "filePathHash": "be82a3a23f8db0beb53aa0ab6ae73f13b7d55fcac68dce2ad7ea284be2e87bbc",
-  "updatedAt": "2026-09-01T06:47:40.190Z",
+  "updatedAt": "2026-09-01T07:03:03.555Z",
   "mappings": [
     {
       "entryId": "6c648f47-0603-4837-8c7a-7bb925588d5e",
@@ -9,8 +9,8 @@
         "start": 1,
         "end": 12
       },
-      "confidence": 0.45,
-      "status": "orphaned"
+      "confidence": 0.55,
+      "status": "uncertain"
     }
   ]
 }

@@ -8,16 +8,16 @@
     "start": 1,
     "end": 1229
   },
-  "note": "kdl-aesgcm:v1:8636a1b0:ukJO8G7LjoB2-ED-:kjYfoMbzyK-Gn3ckCyeLvA:Sm4LQAp00KVbYY08qVJwU4jyIrWjH6pgqTcLk90C9amcD1MRD7RNYmIF74glOpw8nA4lv4wC7I-IhoZQqw",
+  "note": "kdl-aesgcm:v1:8636a1b0:-sdDRfPoaAY8ozxB:FRt8-nItv-3iKG5VHMEp_A:mh6x_nPw08RSC2xc-eYHwjCi_MA8H-BaYKIzLu8zfJbcsz6nhJ9yf-rZSZgTurKSD1k_7rjWsRLHSvxnIA",
   "author": "harimsd07",
   "createdAt": "2026-09-01T06:14:33.478Z",
-  "updatedAt": "2026-09-01T06:14:49.653Z",
+  "updatedAt": "2026-09-01T06:48:59.885Z",
   "severity": "low",
   "tags": [
     "auto"
   ],
   "source": "unknown",
-  "confidence": 0.45,
+  "confidence": 0.7,
   "attributionConfidence": 0.5,
   "canUpgradeAttribution": true,
   "classificationScore": 0.54,
@@ -28,7 +28,7 @@
     "structuralChange": 0.7,
     "environment": 0.2
   },
-  "status": "orphaned",
+  "status": "uncertain",
   "reviewRequired": false,
   "contentFingerprint": [
     "\"### 13.2 Alerting Rules\"",
@@ -469,6 +469,15 @@
   "contentDrift": "low",
   "sessionId": "f89fd732-a56b-4a8d-9d3d-533a3997bdcb",
   "scope": "general",
+  "reasoning": {
+    "intent": "Auto-annotated: Edited documentation in RAG_CHATBOT_DESIGN.md",
+    "reasoning": "",
+    "alternatives": [],
+    "confidence": "low",
+    "extractedAt": "2026-09-01T06:48:59.885Z",
+    "extractionMethod": "diff-inference",
+    "source": "heuristic"
+  },
   "trustLevel": "medium",
   "sourceType": "watcher",
   "ingestion": "heuristic",

@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "f6512c32-7441-4f93-a4fe-9d1cc80eb110",
+  "filePath": "frontend/index.html",
+  "astAnchor": null,
+  "contentHash": "33a6c3f1",
+  "lineRange": {
+    "start": 209,
+    "end": 210
+  },
+  "note": "kdl-aesgcm:v1:8636a1b0:YE5CxgJ42AVgSKex:sMSj5S5J6vhdfjbiS9NaFQ:gHFkG2DnQdYwVPz69P4u7ZzKARvm1QIB6lBGacMIi-VHZ8_K9GrsWmJfXDyZ_vVjpwxikOD4m_m11nB0xk4YXD3bmxch3DkD8X3j8jzg1fXiM7JLVhLDDITlTQ",
+  "author": "harimsd07",
+  "createdAt": "2026-09-01T07:02:37.395Z",
+  "updatedAt": "2026-09-01T07:02:37.395Z",
+  "severity": "low",
+  "tags": [
+    "auto"
+  ],
+  "source": "unknown",
+  "confidence": 0.54,
+  "attributionConfidence": 0.5,
+  "canUpgradeAttribution": true,
+  "classificationScore": 0.54,
+  "classificationSignals": {
+    "editPattern": 0.9,
+    "temporalSignature": 0.3,
+    "fileScope": 0.3,
+    "structuralChange": 0.7,
+    "environment": 0.2
+  },
+  "status": "uncertain",
+  "reviewRequired": false,
+  "contentFingerprint": [
+    "\"font-bold text-white text-lg\"",
+    "\"text-xs text-gray-400\"",
+    "base",
+    "files",
+    "h3",
+    "index",
+    "ingest",
+    "into",
+    "knowledge",
+    "paste",
+    "pdf",
+    "raw",
+    "text",
+    "the",
+    "upload",
+    "vector"
+  ],
+  "contentDrift": "low",
+  "sessionId": "e7ff54c7-d57c-4c2f-9ee2-0e32e634be06",
+  "scope": "general",
+  "trustLevel": "medium",
+  "sourceType": "watcher",
+  "ingestion": "heuristic",
+  "summary": {
+    "intent": "Added index.html",
+    "changeType": "addition",
+    "risk": "low",
+    "shortSummary": "53+/0-"
+  },
+  "rawContext": {
+    "linesAdded": 53,
+    "linesRemoved": 0,
+    "fileCount": 1,
+    "diff": "-     /* Custom Scrollbar */\n+     ::-webkit-scrollbar {\n-     ::-webkit-scrollbar {\n+       width: 6px;\n-       width: 6px;\n+     }\n-     }\n+     ::-webkit-scrollbar-track {\n-     ::-webkit-scrollbar-track {\n+       background: rgba(0, 0, 0, 0.1);\n-       background: rgba(0, 0, 0, 0.1);\n+     }\n-     }\n+     ::-webkit-scrollbar-thumb {\n-     ::-webkit-scrollbar-thumb {\n+       background: rgba(255, 255, 255, 0.15);\n-       background: rgba(255, 255, 255, 0.15);\n+       border-radius: 3px;\n-       border-radius: 3px;\n+     }\n-     }\n+     ::-webkit-scrollbar-thumb:hover {\n-     ::-webkit-scrollbar-thumb:hover {\n+       background: rgba(255, 255, 255, 0.3);\n-       background: rgba(255, 255, 255, 0.3);\n+     }\n-     }\n+   </style>\n-   </style>\n+ </head>\n- </head>\n+ <body class=\"h-screen flex overflow-hidden\">\n- <body class=\"h-screen flex overflow-hidden\">\n+ \n- \n+   <!-- Sidebar Container -->\n-   <!-- Sidebar Container -->\n+   <aside class=\"w-80 border-r border-white/10 glass-panel flex flex-col justify-between hidden md:flex z-20\">\n-   <aside class=\"w-80 border-r border-white/10 glass-panel flex flex-col justify-between hidden md:flex z-20\">\n+     <div>\n-     <div>\n+       <!-- App Header -->\n-       <!-- App Header -->\n+       <div class=\"p-5 flex items-center justify-between border-b border-white/10\">\n-       <div class=\"p-5 flex items-center justify-between border-b border-white/10\">\n+         <div class=\"flex items-center space-x-3\">\n-         <div class=\"flex items-center space-x-3\">\n+           <div class=\"w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-500 to-purple-600 flex items-center justify-center text-white shadow-lg shadow-indigo-500/20\">\n-           <div class=\"w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-500 to-purple-600 flex items-center justify-center text-white shadow-lg shadow-indigo-500/20\">\n+             <i class=\"fa-solid fa-brain text-xl\"></i>\n-             <i class=\"fa-solid me-0 fa-brain text-xl\"></i>\n+           </div>\n-           </div>\n+           <div>\n-           <div>\n+             <h1 class=\"font-bold text-white tracking-wide\">RAG AI Assistant</h1>\n-             <h1 class=\"font-bold text-white tracking-wide\">RAG AI Assistant</h1>\n+             <span class=\"text-xs text-indigo-400 font-medium\">Grounding Engine v1.2</span>\n-             <span class=\"text-xs text-indigo-400 font-medium\">Grounding Engine v1.0</span>\n+           </div>\n-           </div>\n+         </div>\n-         </div>\n+       </div>\n-       </div>\n+ \n- \n+       <!-- Action Buttons -->\n-       <!-- Action Buttons -->\n+       <div class=\"p-4 space-y-2\">\n-       <div class=\"p-4 space-y-2\">\n+         <button id=\"newChatBtn\" class=\"w-full py-2.5 px-4 bg-indigo-600 hover:bg-indigo-500 text-white rounded-xl font-medium transition flex items-center justify-center space-x-2 shadow-lg shadow-indigo-600/30\">\n-         <button id=\"newChatBtn\" class=\"w-full py-2.5 px-4 bg-indigo-600 hover:bg-indigo-500 text-white rounded-xl font-medium transition flex items-center justify-center space-x-2 shadow-lg shadow-indigo-600/30\">\n+           <i class=\"fa-solid fa-plus text-sm\"></i>\n-           <i class=\"fa-solid fa-plus text-sm\"></i>\n+           <span>New Conversation</span>\n-           <span>New Conversation</span>\n+         </button>\n-         </button>\n+         <button id=\"openIngestModalBtn\" class=\"w-full py-2.5 px-4 bg-white/5 hover:bg-white/10 text-white border border-white/10 rounded-xl font-medium transition flex items-center justify-center space-x-2\">\n-         <button id=\"openIngestModalBtn\" class=\"w-full py-2.5 px-4 bg-white/5 hover:bg-white/10 text-white border border-white/10 rounded-xl font-medium transition flex items-center justify-center space-x-2\">\n+           <i class=\"fa-solid fa-file-arrow-up text-indigo-400\"></i>\n-           <i class=\"fa-solid fa-file-arrow-up text-indigo-400\"></i>\n+           <span>Ingest Document (PDF / Text)</span>\n-           <span>Ingest Knowledge Doc</span>\n+         </button>\n-         </button>\n+       </div>\n-       </div>\n+ \n- \n+       <!-- Conversation History List -->\n-       <!-- Conversation History List -->\n+       <div class=\"px-4 py-2\">\n-       <div class=\"px-4 py-2\">\n+         <h2 class=\"text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2\">Recent Sessions</h2>\n-         <h2 class=\"text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2\">Recent Sessions</h2>\n+         <div id=\"conversationList\" class=\"space-y-1 overflow-y-auto max-h-[360px] pr-1\">\n-         <div id=\"conversationList\" class=\"space-y-1 overflow-y-auto max-h-[380px] pr-1\">\n+           <div class=\"p-3 rounded-xl bg-white/5 border border-white/10 text-white text-sm cursor-pointer flex items-center justify-between\">\n-           <!-- Dynamic conversation items -->\n+             <div class=\"flex items-center space-x-2 truncate\">\n-           <div class=\"p-3 rounded-xl bg-white/5 border border-white/10 text-white text-sm cursor-pointer flex items-center justify-between\">\n+               <i class=\"fa-regular fa-message text-indigo-400\"></i>\n-             <div class=\"flex items-center space-x-2 truncate\">\n+               <span class=\"truncate\">General Assistant Session</span>\n-               <i class=\"fa-regular fa-message text-indigo-400\"></i>\n+             </div>\n-               <span class=\"truncate\">General Assistant Session</span>\n+           </div>\n-             </div>\n+         </div>\n-           </div>\n+       </div>\n-         </div>\n+     </div>\n-       </div>\n+ \n-     </div>\n+     <!-- Indexed Knowledge Section -->\n- \n+     <div class=\"p-4 border-t border-white/10 bg-black/20\">\n-     <!-- Indexed Knowledge Section -->\n+       <div class=\"flex items-center justify-between mb-2\">\n-     <div class=\"p-4 border-t border-white/10 bg-black/20\">\n+         <span class=\"text-xs font-semibold text-gray-400 uppercase tracking-wider\">Indexed Documents</span>\n-       <div class=\"flex items-center justify-between mb-2\">\n+         <span id=\"docCountBadge\" class=\"text-xs bg-indigo-500/20 text-indigo-300 px-2 py-0.5 rounded-full font-mono\">0</span>\n-         <span class=\"text-xs font-semibold text-gray-400 uppercase tracking-wider\">Indexed Documents</span>\n+       </div>\n-         <span id=\"docCountBadge\" class=\"text-xs bg-indigo-500/20 text-indigo-300 px-2 py-0.5 rounded-full font-mono\">0</span>\n+       <div id=\"documentMiniList\" class=\"space-y-1.5 max-h-32 overflow-y-auto pr-1\">\n-       </div>\n+         <p class=\"text-xs text-gray-500 italic\">No documents indexed yet.</p>\n-       <div id=\"documentMiniList\" class=\"space-y-1.5 max-h-32 overflow-y-auto pr-1\">\n+       </div>\n-         <p class=\"text-xs text-gray-500 italic\">No documents indexed yet.</p>\n+     </div>\n-       </div>\n+   </aside>\n-     </div>\n+ \n-   </aside>\n+   <!-- Main Chat & Workspace Area -->\n- \n+   <main class=\"flex-1 flex flex-col h-full bg-gradient-to-b from-surface-900 to-surface-950\">\n-   <!-- Main Chat & Workspace Area -->\n+     \n-   <main class=\"flex-1 flex flex-col h-full bg-gradient-to-b from-surface-900 to-surface-950\">\n+     <!-- Top Header Bar -->\n-     \n+     <header class=\"h-16 border-b border-white/10 px-6 flex items-center justify-between glass-panel z-10\">\n-     <!-- Top Header Bar -->\n+       <div class=\"flex items-center space-x-3\">\n-     <header class=\"h-16 border-b border-white/10 px-6 flex items-center justify-between glass-panel z-10\">\n+         <button id=\"mobileToggle\" class=\"md:hidden text-gray-400 hover:text-white\">\n-       <div class=\"flex items-center space-x-3\">\n+           <i class=\"fa-solid fa-bars text-lg\"></i>\n-         <button id=\"mobileToggle\" class=\"md:hidden text-gray-400 hover:text-white\">\n+         </button>\n-           <i class=\"fa-solid fa-bars text-lg\"></i>\n+         <div>\n-         </button>\n+           <h2 id=\"activeSessionTitle\" class=\"font-semibold text-white\">General Assistant Session</h2>\n-         <div>\n+           <div class=\"flex items-center space-x-2 text-xs text-gray-400\">\n-           <h2 id=\"activeSessionTitle\" class=\"font-semibold text-white\">General Assistant Session</h2>\n+             <span class=\"inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse\"></span>\n-           <div class=\"flex items-center space-x-2 text-xs text-gray-400\">\n+             <span>Hybrid BM25 + Vector Search Active</span>\n-             <span class=\"inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse\"></span>\n+           </div>\n-             <span>Vector Grounding Active</span>\n+         </div>\n-           </div>\n+       </div>\n-         </div>\n+ \n-       </div>\n+       <div class=\"flex items-center space-x-3\">\n- \n+         <button id=\"clearChatBtn\" class=\"text-xs bg-white/5 hover:bg-white/10 border border-white/10 text-gray-300 px-3 py-1.5 rounded-lg flex items-center space-x-2\">\n-       <div class=\"flex items-center space-x-3\">\n+           <i class=\"fa-solid fa-trash-can text-rose-400\"></i>\n-         <span class=\"text-xs bg-white/5 border border-white/10 text-gray-300 px-3 py-1.5 rounded-lg flex items-center space-x-2\">\n+           <span>Clear Chat</span>\n-           <i class=\"fa-solid fa-bolt text-amber-400\"></i>\n+         </button>\n-           <span>Hybrid Vector Search</span>\n+       </div>\n-         </span>\n+     </header>\n-       </div>\n+ \n-     </header>\n+     <!-- Chat Messages Scroll Container -->\n- \n+     <div id=\"chatMessages\" class=\"flex-1 overflow-y-auto p-6 space-y-6\">\n-     <!-- Chat Messages Scroll Container -->\n+       \n... (truncated)",
+    "sessionId": "e7ff54c7-d57c-4c2f-9ee2-0e32e634be06"
+  }
+}

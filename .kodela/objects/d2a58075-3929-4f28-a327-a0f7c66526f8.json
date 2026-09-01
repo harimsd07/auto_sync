@@ -1,0 +1,53 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "d2a58075-3929-4f28-a327-a0f7c66526f8",
+  "filePath": "/home/irah/kodela_autosync/backend/app/core/security.py",
+  "astAnchor": null,
+  "contentHash": "1ca3270a052fa675faa1b547f05004663b0f3861b5f12e3576bb20227f8bcc54",
+  "lineRange": {
+    "start": 1,
+    "end": 32
+  },
+  "note": "kdl-aesgcm:v1:8636a1b0:KXHCxMJjNBy1LjeP:bhTefnkaOfXAbuRasRcDxg:V0cSD2ur4YLSSOz0VSLRukhTWzk0ThXoo5V_Ns3uRlLe4cSw94P6XfsyM4o5geKg9nUQb2Kdeik40qX8acv_wvQvLz7ynhf8kGabeYfNHgsACOReN-5CMY9ZCjff6IJe5_4zTlI0kRRCjCAVIkHdU_nD6bsb-Uy8PPTEeIOdp7AZVo3TU4hnsazqJspJttY",
+  "author": "ai-agent",
+  "createdAt": "2026-09-01T06:59:17.129Z",
+  "updatedAt": "2026-09-01T06:59:17.129Z",
+  "severity": "low",
+  "tags": [
+    "per-file-context",
+    "session:3da48302-9493-4361-8b39-73ebc5b0553a",
+    "ai",
+    "antigravity-assistant"
+  ],
+  "source": "ai",
+  "aiTool": "antigravity-assistant",
+  "confidence": 0.95,
+  "attributionConfidence": 0.95,
+  "canUpgradeAttribution": false,
+  "status": "mapped",
+  "reviewRequired": false,
+  "contentDrift": "low",
+  "origin": {
+    "type": "ai",
+    "summary": "Created security authentication utility module",
+    "tool": "antigravity-assistant",
+    "sessionId": "3da48302-9493-4361-8b39-73ebc5b0553a"
+  },
+  "sessionId": "3da48302-9493-4361-8b39-73ebc5b0553a",
+  "scope": "crypto",
+  "trustLevel": "high",
+  "sourceType": "sdk",
+  "ingestion": "deterministic",
+  "summary": {
+    "intent": "Created security authentication utility module",
+    "changeType": "addition",
+    "risk": "low",
+    "shortSummary": "32+/0-"
+  },
+  "rawContext": {
+    "linesAdded": 32,
+    "linesRemoved": 0,
+    "fileCount": 1,
+    "sessionId": "3da48302-9493-4361-8b39-73ebc5b0553a"
+  }
+}

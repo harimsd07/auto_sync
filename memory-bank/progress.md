@@ -3,8 +3,8 @@
 # Progress
 
 ## What's captured
-- 34 context entries across 34 files
-- By author — unknown: 18, ai: 16
+- 84 context entries across 38 files
+- By author — unknown: 58, ai: 26
 
 _Maintained by Kodela — run `kodela memory-bank` to refresh._
 

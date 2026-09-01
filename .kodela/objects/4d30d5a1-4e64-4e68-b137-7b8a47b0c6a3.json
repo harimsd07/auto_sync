@@ -8,16 +8,16 @@
     "start": 1,
     "end": 13
   },
-  "note": "kdl-aesgcm:v1:8636a1b0:j2q3EfxV2pHszjT3:MhiqUkmp1gfe1KO57-VxeQ:IhVKb68b9IhktaH98moiuL3wsY0VEWMQiLbu2jy-tf90IXwfl-qZiyu4NILoT2c-gg",
+  "note": "kdl-aesgcm:v1:8636a1b0:fweD_n4J_jqm2cmZ:ikaoyknR2hDYTak9Q9hVFA:84xPmsmwHpEVTHK-roJHy_zKxuH7We8k9mcZkyMyMYVuWsbNh0hYIv6WSouDJxfEjg",
   "author": "harimsd07",
   "createdAt": "2026-09-01T06:10:48.704Z",
-  "updatedAt": "2026-09-01T06:10:48.704Z",
+  "updatedAt": "2026-09-01T06:48:59.879Z",
   "severity": "low",
   "tags": [
     "auto"
   ],
   "source": "unknown",
-  "confidence": 0.52,
+  "confidence": 0.7,
   "attributionConfidence": 0.5,
   "canUpgradeAttribution": true,
   "classificationScore": 0.52,
@@ -103,6 +103,15 @@
   "contentDrift": "low",
   "sessionId": "593c5a1e-da49-4ceb-806a-7987a56ee41d",
   "scope": "general",
+  "reasoning": {
+    "intent": "Auto-annotated: Edited documentation in AGENTS.md",
+    "reasoning": "",
+    "alternatives": [],
+    "confidence": "low",
+    "extractedAt": "2026-09-01T06:48:59.879Z",
+    "extractionMethod": "diff-inference",
+    "source": "heuristic"
+  },
   "trustLevel": "medium",
   "sourceType": "watcher",
   "ingestion": "heuristic",

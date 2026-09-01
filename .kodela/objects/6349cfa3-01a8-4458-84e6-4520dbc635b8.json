@@ -1,0 +1,53 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "6349cfa3-01a8-4458-84e6-4520dbc635b8",
+  "filePath": "/home/irah/kodela_autosync/backend/tests/test_api.py",
+  "astAnchor": null,
+  "contentHash": "bfc0322de33051281f1fb0ef1f0d40a8df98b56dea4eb5dd0bfdd63603d1dfed",
+  "lineRange": {
+    "start": 1,
+    "end": 7
+  },
+  "note": "kdl-aesgcm:v1:8636a1b0:1Z77KmLMJOTppNWb:OEYwBx2nDjqtEyGrudd8oQ:ttx_MRq5K1flcJ15sx67RPyAMCFth71LhMCpNLkmduvOWLh1cd_sggjIAQ0baMpJC_qcM77M9CWGPUCE9YNaZWHEmtoQd43oLM2BwF63B8F9PkTIdseqYFwjykRl2-hZd3EmsyyzfMyDTHQ2IyHOx6oYONHFMFELDJZS",
+  "author": "ai-agent",
+  "createdAt": "2026-09-01T06:52:08.238Z",
+  "updatedAt": "2026-09-01T06:52:08.238Z",
+  "severity": "low",
+  "tags": [
+    "per-file-context",
+    "session:ccce6ca7-6ec9-49f1-b7f8-bbb56ce74e3f",
+    "ai",
+    "antigravity-assistant"
+  ],
+  "source": "ai",
+  "aiTool": "antigravity-assistant",
+  "confidence": 0.95,
+  "attributionConfidence": 0.95,
+  "canUpgradeAttribution": false,
+  "status": "mapped",
+  "reviewRequired": false,
+  "contentDrift": "low",
+  "origin": {
+    "type": "ai",
+    "summary": "Added init_db fixture to test suite",
+    "tool": "antigravity-assistant",
+    "sessionId": "ccce6ca7-6ec9-49f1-b7f8-bbb56ce74e3f"
+  },
+  "sessionId": "ccce6ca7-6ec9-49f1-b7f8-bbb56ce74e3f",
+  "scope": "test",
+  "trustLevel": "high",
+  "sourceType": "sdk",
+  "ingestion": "deterministic",
+  "summary": {
+    "intent": "Added init_db fixture to test suite",
+    "changeType": "addition",
+    "risk": "low",
+    "shortSummary": "7+/0-"
+  },
+  "rawContext": {
+    "linesAdded": 7,
+    "linesRemoved": 0,
+    "fileCount": 1,
+    "sessionId": "ccce6ca7-6ec9-49f1-b7f8-bbb56ce74e3f"
+  }
+}

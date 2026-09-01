@@ -2,19 +2,29 @@
 
 # Active Context
 
-_34 captured changes on record._
+_84 captured changes on record._
 
 ## Recent changes — the *why*
-- `/home/irah/kodela_autosync/backend/tests/test_api.py` — Created test suite for backend API verification Problem solved: Verify health check, document ingestion, vector retrieval, and SSE chat str… _(ai, 2026-09-01)_
-- `backend/tests/test_api.py` — Auto-annotated: Added test `test_health_check`, `test_document_ingestion_and_chat_flow` in test_api.py _(unknown, 2026-09-01)_
-- `/home/irah/kodela_autosync/backend/app/main.py` — Created main FastAPI application server Problem solved: FastAPI application startup, database schema initialization, CORS, and health routi… _(ai, 2026-09-01)_
+- `rag.db` — Auto-annotated: Modified rag.db — 1 hunk _(unknown, 2026-09-01)_
+- `/home/irah/kodela_autosync/backend/tests/test_api.py` — Expanded automated test suite for new improvements Problem solved: Add automated unit tests for binary file upload endpoint, hybrid search,… _(ai, 2026-09-01)_
+- `/home/irah/kodela_autosync/frontend/index.html` — Enhanced web app interface for file ingestion and user feedback Problem solved: Add drag-and-drop PDF file upload tab, message feedback rat… _(ai, 2026-09-01)_
 - `memory-bank/activeContext.md` — Auto-annotated: Edited documentation in activeContext.md _(unknown, 2026-09-01)_
-- `/home/irah/kodela_autosync/backend/app/api/v1/router.py` — Created API v1 router module Problem solved: Assemble sub-routers into single v1 API router _(ai, 2026-09-01)_
-- `/home/irah/kodela_autosync/backend/app/api/v1/endpoints/chat.py` — Created SSE streaming chat API endpoint Problem solved: Stream RAG response chunks with citation sources via Server-Sent Events and store h… _(ai, 2026-09-01)_
-- `backend/app/api/v1/endpoints/chat.py` — Auto-annotated: Added `ChatRequest`, `chat_stream_endpoint`, `sse_event_generator` in chat.py _(unknown, 2026-09-01)_
-- `/home/irah/kodela_autosync/backend/app/api/v1/endpoints/conversations.py` — Created conversation session management API endpoints Problem solved: Provide session creation, message loading, listing, and session delet… _(ai, 2026-09-01)_
-- `backend/app/api/v1/endpoints/conversations.py` — Auto-annotated: Added `ConversationCreate`, `ConversationOut`, `MessageOut` in conversations.py _(unknown, 2026-09-01)_
-- `/home/irah/kodela_autosync/backend/app/api/v1/endpoints/documents.py` — Created document management API endpoints Problem solved: Provide document upload, listing, and deletion API endpoints integrated with chun… _(ai, 2026-09-01)_
+- `frontend/index.html` — Auto-annotated: Added `appendFeedbackButtons`, `sendFeedback`, `clearChatBtn` in index.html _(unknown, 2026-09-01)_
+- `frontend/index.html` — Auto-annotated: Added `appendFeedbackButtons`, `sendFeedback`, `clearChatBtn` in index.html _(unknown, 2026-09-01)_
+- `frontend/index.html` — Auto-annotated: Added `appendFeedbackButtons`, `sendFeedback`, `clearChatBtn` in index.html _(unknown, 2026-09-01)_
+- `frontend/index.html` — Auto-annotated: Added `appendFeedbackButtons`, `sendFeedback`, `clearChatBtn` in index.html _(unknown, 2026-09-01)_
+- `frontend/index.html` — Auto-annotated: Added `appendFeedbackButtons`, `sendFeedback`, `clearChatBtn` in index.html _(unknown, 2026-09-01)_
+- `frontend/index.html` — Auto-annotated: Added `appendFeedbackButtons`, `sendFeedback`, `clearChatBtn` in index.html _(unknown, 2026-09-01)_
+
+## Most-documented areas
+- `frontend/index.html` — 37 captured changes
+- `/home/irah/kodela_autosync/backend/tests/test_api.py` — 4 captured changes
+- `backend/app/api/v1/endpoints/documents.py` — 3 captured changes
+- `/home/irah/kodela_autosync/backend/app/services/vector_store.py` — 2 captured changes
+- `/home/irah/kodela_autosync/backend/app/services/llm_rag.py` — 2 captured changes
+- `/home/irah/kodela_autosync/backend/app/api/v1/endpoints/documents.py` — 2 captured changes
+- `/home/irah/kodela_autosync/backend/app/api/v1/endpoints/conversations.py` — 2 captured changes
+- `/home/irah/kodela_autosync/frontend/index.html` — 2 captured changes
 
 _Maintained by Kodela — run `kodela memory-bank` to refresh._
 

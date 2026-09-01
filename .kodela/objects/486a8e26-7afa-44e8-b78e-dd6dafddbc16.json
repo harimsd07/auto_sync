@@ -8,16 +8,16 @@
     "start": 1,
     "end": 93
   },
-  "note": "kdl-aesgcm:v1:8636a1b0:Pf4fp4NgHhGY1t2Y:tbCxNfn41RUKCRAl19__zw:eN_aQbRUXITQ-Dia2DpK3hjzE0kQ77UY9GUA6NrZo_PBE0xtEnPCOJPdiKuZjfFQaDE3ntW-tmzlOmXvB_wVISTG0KhkBQ",
+  "note": "kdl-aesgcm:v1:8636a1b0:dQB7voKxEVi3HwCd:kd0fwOUmumwQKJ7lK0Uw7A:Ui40MR_AOEpzc7eQ5Bx9VyYV0AV5QI8WLbb3DVscwxml-L8c-CGQ6oPGtoH77Wg5ITAzcqM04uMkLe0dFNAsuTLgYcYbXw",
   "author": "harimsd07",
   "createdAt": "2026-09-01T06:45:47.456Z",
-  "updatedAt": "2026-09-01T06:45:47.456Z",
+  "updatedAt": "2026-09-01T06:48:59.891Z",
   "severity": "low",
   "tags": [
     "auto"
   ],
   "source": "unknown",
-  "confidence": 0.54,
+  "confidence": 0.7,
   "attributionConfidence": 0.5,
   "canUpgradeAttribution": true,
   "classificationScore": 0.54,
@@ -161,6 +161,15 @@
   "contentDrift": "low",
   "sessionId": "f093598c-5cc1-4e67-a4b6-9970588c6d5b",
   "scope": "db",
+  "reasoning": {
+    "intent": "Auto-annotated: Added `User`, `Document`, `DocumentChunk` in models.py",
+    "reasoning": "",
+    "alternatives": [],
+    "confidence": "low",
+    "extractedAt": "2026-09-01T06:48:59.891Z",
+    "extractionMethod": "diff-inference",
+    "source": "heuristic"
+  },
   "trustLevel": "medium",
   "sourceType": "watcher",
   "ingestion": "heuristic",

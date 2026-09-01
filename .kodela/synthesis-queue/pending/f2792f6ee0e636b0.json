@@ -1,0 +1,8 @@
+{
+  "id": "f2792f6ee0e636b0",
+  "sessionId": "3da48302-9493-4361-8b39-73ebc5b0553a",
+  "filePath": "backend/app/services/llm_rag.py",
+  "enqueuedAt": "2026-09-01T07:03:22.163Z",
+  "attempts": 0,
+  "commitSha": "d3d646feaceb14d5637f543d09bd3e4f6ff24bea"
+}

@@ -1,3 +1,4 @@
+import io
 from fastapi import APIRouter, Depends, HTTPException, UploadFile, File, Form, status
 from typing import List, Optional
 from pydantic import BaseModel
@@ -41,14 +42,11 @@ async def upload_text_document(req: TextUploadRequest, db: AsyncSession = Depend
     await db.commit()
     await db.refresh(doc)
 
-    # Process chunking & vector embeddings
     chunks_data = chunking_service.split_text(req.content)
     chunk_objects = []
 
     for item in chunks_data:
         vector_id = f"vec-{doc.id}-{item['chunk_index']}"
-        
-        # Save to Vector Store
         await vector_store.upsert(
             vector_id=vector_id,
             text=item["content"],
@@ -56,6 +54,87 @@ async def upload_text_document(req: TextUploadRequest, db: AsyncSession = Depend
                 "document_id": doc.id,
                 "user_id": req.user_id,
                 "title": req.title,
+                "chunk_index": item["chunk_index"]
+            }
+        )
+
+        chunk_obj = DocumentChunk(
+            document_id=doc.id,
+            chunk_index=item["chunk_index"],
+            content=item["content"],
+            token_count=item["token_count"],
+            vector_id=vector_id,
+            embedding_model="text-embedding-3-small"
+        )
+        chunk_objects.append(chunk_obj)
+
+    db.add_all(chunk_objects)
+    await db.commit()
+
+    return {
+        "id": doc.id,
+        "title": doc.title,
+        "source": doc.source,
+        "file_type": doc.file_type,
+        "file_size": doc.file_size,
+        "embedding_status": doc.embedding_status,
+        "chunk_count": len(chunk_objects),
+        "created_at": doc.created_at.isoformat()
+    }
+
+@router.post("/upload-file", response_model=DocumentOut)
+async def upload_file_document(
+    file: UploadFile = File(...),
+    user_id: str = Form("default_user"),
+    db: AsyncSession = Depends(get_db)
+):
+    file_bytes = await file.read()
+    filename = file.filename or "uploaded_doc"
+    file_size = len(file_bytes)
+    content_text = ""
+
+    if filename.lower().endswith(".pdf"):
+        try:
+            import pypdf
+            pdf_reader = pypdf.PdfReader(io.BytesIO(file_bytes))
+            text_pages = [page.extract_text() for page in pdf_reader.pages if page.extract_text()]
+            content_text = "\n\n".join(text_pages)
+        except Exception as e:
+            raise HTTPException(status_code=400, detail=f"Could not parse PDF file: {str(e)}")
+    else:
+        try:
+            content_text = file_bytes.decode('utf-8', errors='ignore')
+        except Exception as e:
+            raise HTTPException(status_code=400, detail=f"Could not read text file: {str(e)}")
+
+    if not content_text.strip():
+        raise HTTPException(status_code=400, detail="Extracted document content is empty.")
+
+    doc = Document(
+        user_id=user_id,
+        title=filename,
+        content=content_text,
+        source="file_upload",
+        file_type=file.content_type or "application/octet-stream",
+        file_size=file_size,
+        embedding_status="completed"
+    )
+    db.add(doc)
+    await db.commit()
+    await db.refresh(doc)
+
+    chunks_data = chunking_service.split_text(content_text)
+    chunk_objects = []
+
+    for item in chunks_data:
+        vector_id = f"vec-{doc.id}-{item['chunk_index']}"
+        await vector_store.upsert(
+            vector_id=vector_id,
+            text=item["content"],
+            metadata={
+                "document_id": doc.id,
+                "user_id": user_id,
+                "title": filename,
                 "chunk_index": item["chunk_index"]
             }
         )

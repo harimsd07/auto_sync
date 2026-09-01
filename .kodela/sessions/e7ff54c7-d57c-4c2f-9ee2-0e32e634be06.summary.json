@@ -1,0 +1,32 @@
+{
+  "sessionId": "e7ff54c7-d57c-4c2f-9ee2-0e32e634be06",
+  "intent": "Auto-annotate watcher batch for 1 file: backend/app/api/v1/endpoints/documents.py.",
+  "reasoning": "Added documents.py\n\nAdded index.html.\n\nSession scope: 2 files changed (+2066/-0 lines), risk low, confidence 54%.\n\nNo explicit test execution results were captured in session artifacts.",
+  "goal": "Auto-annotate watcher batch for 1 file: backend/app/api/v1/endpoints/documents.py.",
+  "filesChanged": [
+    "backend/app/api/v1/endpoints/documents.py",
+    "frontend/index.html"
+  ],
+  "totalLinesAdded": 2066,
+  "totalLinesRemoved": 0,
+  "dominantChangeType": "addition",
+  "riskLevel": "low",
+  "avgConfidence": 0.5399999999999995,
+  "entryCount": 38,
+  "synthesisedAt": "2026-09-01T07:02:37.503Z",
+  "intentSource": "user-goal",
+  "memory": {
+    "whatChanged": [
+      "Added documents.py",
+      "Added index.html",
+      "h-screen flex overflow-hidden",
+      "Changed 2 files (+2066/-0 lines).",
+      "Primary files: endpoints/documents.py, frontend/index.html."
+    ],
+    "whyItMatters": "Added documents.py",
+    "validationContext": "No explicit test execution results were captured in session artifacts.",
+    "nextActions": [
+      "Review 38 uncertain annotations to confirm intent and mapping accuracy."
+    ]
+  }
+}

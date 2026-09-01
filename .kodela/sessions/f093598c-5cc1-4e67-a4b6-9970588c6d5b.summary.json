@@ -1,7 +1,7 @@
 {
   "sessionId": "f093598c-5cc1-4e67-a4b6-9970588c6d5b",
   "intent": "Auto-annotate watcher batch for 1 file: docker-compose.yml.",
-  "reasoning": "Added docker-compose.yml\n\nAdded models.py.\n\nSession scope: 11 files changed (+1279/-0 lines), risk low, confidence 54%.\n\nNo explicit test execution results were captured in session artifacts.",
+  "reasoning": "Added docker-compose.yml\n\nAdded models.py.\n\nSession scope: 11 files changed (+1279/-0 lines), risk high, confidence 67%.\n\nNo explicit test execution results were captured in session artifacts.",
   "goal": "Auto-annotate watcher batch for 1 file: docker-compose.yml.",
   "filesChanged": [
     "docker-compose.yml",
@@ -19,10 +19,10 @@
   "totalLinesAdded": 1279,
   "totalLinesRemoved": 0,
   "dominantChangeType": "addition",
-  "riskLevel": "low",
-  "avgConfidence": 0.54,
+  "riskLevel": "high",
+  "avgConfidence": 0.6727272727272727,
   "entryCount": 11,
-  "synthesisedAt": "2026-09-01T06:47:39.777Z",
+  "synthesisedAt": "2026-09-01T06:52:29.165Z",
   "intentSource": "user-goal",
   "memory": {
     "whatChanged": [

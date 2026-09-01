@@ -8,16 +8,16 @@
     "start": 1,
     "end": 14
   },
-  "note": "kdl-aesgcm:v1:8636a1b0:kbeqfvCbqgj_r2OX:DYuOWSm4225brf-bCKZ5jw:YoyDg_odq6_D_LOEX9SBZVen7QC4gtDbSFWjZCWROOa_ztXfVdu7h515bdY",
+  "note": "kdl-aesgcm:v1:8636a1b0:NTg3eqi0dpSjQU9n:OwMv3tWYjA9J74gpxJWDAA:ALBMDAZBFgYoG_V93aqXiHCGIploVIe3023520g-eiSpYEPbWdAMPeIn5gg",
   "author": "harimsd07",
   "createdAt": "2026-09-01T06:10:48.693Z",
-  "updatedAt": "2026-09-01T06:10:48.693Z",
+  "updatedAt": "2026-09-01T06:48:59.876Z",
   "severity": "low",
   "tags": [
     "auto"
   ],
   "source": "unknown",
-  "confidence": 0.52,
+  "confidence": 0.7,
   "attributionConfidence": 0.5,
   "canUpgradeAttribution": true,
   "classificationScore": 0.52,
@@ -44,6 +44,15 @@
   "contentDrift": "low",
   "sessionId": "593c5a1e-da49-4ceb-806a-7987a56ee41d",
   "scope": "general",
+  "reasoning": {
+    "intent": "Auto-annotated: Modified mcp.json — 1 hunk",
+    "reasoning": "",
+    "alternatives": [],
+    "confidence": "low",
+    "extractedAt": "2026-09-01T06:48:59.876Z",
+    "extractionMethod": "diff-inference",
+    "source": "heuristic"
+  },
   "trustLevel": "medium",
   "sourceType": "watcher",
   "ingestion": "heuristic",
