@@ -1,0 +1,53 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "320b5732-a776-4aed-9d9a-98bc56b3b7d8",
+  "filePath": "/home/irah/kodela_autosync/frontend/index.html",
+  "astAnchor": null,
+  "contentHash": "edf42d8a324e414f128a7dd99b6df9683edf97f0b0b0bc894b48f879b51039ca",
+  "lineRange": {
+    "start": 1,
+    "end": 340
+  },
+  "note": "kdl-aesgcm:v1:8636a1b0:xuvM7Gf8PtWfEONe:ZtcwxH9MAib6L3UqxCL8Pw:YLJJT3rPNrWmlk5VukbiAYZwZgOU7JDQD_VlO62hIKx9G5QflgNx69vOW6SVmThMXuBu059wFwurH2KSQTRaGM39-1D0vX1R3P5bnslB33nYGB6KCt5D0vtj-KonhSZCjpcgY4xN6IH0PdvRR-ZYdfVWk1GWI7KRg6__YuLPtiVSZ9hE4zKm0Uuo6_29PQBbrOrV8TtEzrTVjUeMSSDc5IqzvZ7LCoF5Uu4wSKoz",
+  "author": "ai-agent",
+  "createdAt": "2026-09-01T06:47:46.263Z",
+  "updatedAt": "2026-09-01T06:47:46.263Z",
+  "severity": "low",
+  "tags": [
+    "per-file-context",
+    "session:ccce6ca7-6ec9-49f1-b7f8-bbb56ce74e3f",
+    "ai",
+    "antigravity-assistant"
+  ],
+  "source": "ai",
+  "aiTool": "antigravity-assistant",
+  "confidence": 0.95,
+  "attributionConfidence": 0.95,
+  "canUpgradeAttribution": false,
+  "status": "mapped",
+  "reviewRequired": false,
+  "contentDrift": "low",
+  "origin": {
+    "type": "ai",
+    "summary": "Created modern web application frontend UI",
+    "tool": "antigravity-assistant",
+    "sessionId": "ccce6ca7-6ec9-49f1-b7f8-bbb56ce74e3f"
+  },
+  "sessionId": "ccce6ca7-6ec9-49f1-b7f8-bbb56ce74e3f",
+  "scope": "general",
+  "trustLevel": "high",
+  "sourceType": "sdk",
+  "ingestion": "deterministic",
+  "summary": {
+    "intent": "Created modern web application frontend UI",
+    "changeType": "addition",
+    "risk": "medium",
+    "shortSummary": "340+/0-"
+  },
+  "rawContext": {
+    "linesAdded": 340,
+    "linesRemoved": 0,
+    "fileCount": 1,
+    "sessionId": "ccce6ca7-6ec9-49f1-b7f8-bbb56ce74e3f"
+  }
+}

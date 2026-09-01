@@ -1,0 +1,63 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "9ec5c5e5-b471-4cc7-b307-33d99a311bb4",
+  "filePath": ".kiro/settings/mcp.json",
+  "astAnchor": null,
+  "contentHash": "308ad54b",
+  "lineRange": {
+    "start": 1,
+    "end": 14
+  },
+  "note": "kdl-aesgcm:v1:8636a1b0:P4PSWAeuis0ykzWS:TZI2KkbRboP3S09WuZNYQQ:I-P3rf8FusXVUbRXIXSJZm0gojbpmP2dRVRY0vaBKVvzXEeqDu1tUV9PpWM",
+  "author": "harimsd07",
+  "createdAt": "2026-09-01T06:10:48.707Z",
+  "updatedAt": "2026-09-01T06:10:48.707Z",
+  "severity": "low",
+  "tags": [
+    "auto"
+  ],
+  "source": "unknown",
+  "confidence": 0.52,
+  "attributionConfidence": 0.5,
+  "canUpgradeAttribution": true,
+  "classificationScore": 0.52,
+  "classificationSignals": {
+    "editPattern": 0.5,
+    "temporalSignature": 0.5,
+    "fileScope": 0.8,
+    "structuralChange": 0.4,
+    "environment": 0.2
+  },
+  "status": "uncertain",
+  "reviewRequired": false,
+  "contentFingerprint": [
+    "\"-y\"",
+    "\"@kodela/cli\"",
+    "\"args\"",
+    "\"command\"",
+    "\"kodela\"",
+    "\"mcp\"",
+    "\"mcpServers\"",
+    "\"npx\"",
+    "\"serve\""
+  ],
+  "contentDrift": "low",
+  "sessionId": "593c5a1e-da49-4ceb-806a-7987a56ee41d",
+  "scope": "config",
+  "trustLevel": "medium",
+  "sourceType": "watcher",
+  "ingestion": "heuristic",
+  "summary": {
+    "intent": "Added mcp.json",
+    "changeType": "addition",
+    "risk": "low",
+    "shortSummary": "13+/0-"
+  },
+  "rawContext": {
+    "linesAdded": 13,
+    "linesRemoved": 0,
+    "fileCount": 1,
+    "diff": "- \n+ {\n+   \"mcpServers\": {\n+     \"kodela\": {\n+       \"command\": \"npx\",\n+       \"args\": [\n+         \"-y\",\n+         \"@kodela/cli\",\n+         \"mcp\",\n+         \"serve\"\n+       ]\n+     }\n+   }\n+ }\n+ ",
+    "sessionId": "593c5a1e-da49-4ceb-806a-7987a56ee41d"
+  }
+}

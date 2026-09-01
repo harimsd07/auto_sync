@@ -1,0 +1,23 @@
+# Kodela custom ignore patterns
+# The watcher respects these in addition to .gitignore and kodela.config.json
+# baseline.ignore_patterns.  Supports .gitignore-style syntax:
+#   *.ext        — file extension wildcard
+#   dir/         — any directory with this name anywhere in the tree
+#   /anchored    — only matches at the repo root
+#   dir/**       — everything inside a directory
+
+# Replit internal state (logs, skills, task metadata)
+.local/
+
+# Uploaded archives / binary blobs (rename to track a specific file)
+*.zip
+*.tar.gz
+*.tar.bz2
+attached_assets/
+
+# Lock files (versions are pinned; content churn is not meaningful)
+pnpm-lock.yaml
+package-lock.json
+yarn.lock
+
+# Add your project-specific patterns below:

@@ -1,0 +1,53 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "4a509cf5-6825-46d5-89c9-1811fb2893ed",
+  "filePath": "/home/irah/kodela_autosync/backend/app/api/v1/endpoints/auth.py",
+  "astAnchor": null,
+  "contentHash": "ff0ed4e9db792ace120bda9f6d7c2ac8e63942bd3c9fa1e934a08802a92c8ad4",
+  "lineRange": {
+    "start": 1,
+    "end": 56
+  },
+  "note": "kdl-aesgcm:v1:8636a1b0:o_A0ESONOMP5KRgi:4V94OrrZWrnPyXeBuIPGLA:Zyi7dwW7dBiXravI5hVYojqItqxIsoRaOD3kmup5Q4VWj96nwmFDiKaoDg7t7JStL5fYPocRUdxPn248CB07ijStW9KqhQ-y4fdTOJBUkXxZb2zNYLtsuFw8PSBpJ9zB32XX1jooTg",
+  "author": "ai-agent",
+  "createdAt": "2026-09-01T06:46:30.805Z",
+  "updatedAt": "2026-09-01T06:46:30.805Z",
+  "severity": "low",
+  "tags": [
+    "per-file-context",
+    "session:ccce6ca7-6ec9-49f1-b7f8-bbb56ce74e3f",
+    "ai",
+    "antigravity-assistant"
+  ],
+  "source": "ai",
+  "aiTool": "antigravity-assistant",
+  "confidence": 0.95,
+  "attributionConfidence": 0.95,
+  "canUpgradeAttribution": false,
+  "status": "mapped",
+  "reviewRequired": false,
+  "contentDrift": "low",
+  "origin": {
+    "type": "ai",
+    "summary": "Created auth API endpoints",
+    "tool": "antigravity-assistant",
+    "sessionId": "ccce6ca7-6ec9-49f1-b7f8-bbb56ce74e3f"
+  },
+  "sessionId": "ccce6ca7-6ec9-49f1-b7f8-bbb56ce74e3f",
+  "scope": "auth",
+  "trustLevel": "high",
+  "sourceType": "sdk",
+  "ingestion": "deterministic",
+  "summary": {
+    "intent": "Created auth API endpoints",
+    "changeType": "addition",
+    "risk": "high",
+    "shortSummary": "56+/0-"
+  },
+  "rawContext": {
+    "linesAdded": 56,
+    "linesRemoved": 0,
+    "fileCount": 1,
+    "sessionId": "ccce6ca7-6ec9-49f1-b7f8-bbb56ce74e3f"
+  }
+}

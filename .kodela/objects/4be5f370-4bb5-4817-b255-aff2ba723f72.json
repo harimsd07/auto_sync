@@ -1,0 +1,53 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "4be5f370-4bb5-4817-b255-aff2ba723f72",
+  "filePath": "/home/irah/kodela_autosync/backend/app/models/models.py",
+  "astAnchor": null,
+  "contentHash": "e92e64cb87c932c40b8a34aec11597d6dba4b5d15c0a7e3cb47253feec63a36d",
+  "lineRange": {
+    "start": 1,
+    "end": 77
+  },
+  "note": "kdl-aesgcm:v1:8636a1b0:R3ogwGe_wje14EG4:m8TFHw4aRU4Olhg8UyQGuA:NE5Ga37iakFjNuCB3qlgIu5gSXHQAEXwEVqgP8Wlnlmy2E4K71WMyi78inlrh6rRrt_xK7C9gEMEWZQB_EMH84Lp_tU13wzhRO2imTZqYM9kxQzrS2Hwv7b9HaYCij246wEF5x0_Ui78re7dM67SnEGlvLFnWGIcbfIRDtQ7IEkn97Mt3feFm2MMB79enDNIIvYrdZHft_E_LQlIim2sUQMThnq2TFMJ2ns",
+  "author": "ai-agent",
+  "createdAt": "2026-09-01T06:45:53.303Z",
+  "updatedAt": "2026-09-01T06:45:53.303Z",
+  "severity": "low",
+  "tags": [
+    "per-file-context",
+    "session:ccce6ca7-6ec9-49f1-b7f8-bbb56ce74e3f",
+    "ai",
+    "antigravity-assistant"
+  ],
+  "source": "ai",
+  "aiTool": "antigravity-assistant",
+  "confidence": 0.95,
+  "attributionConfidence": 0.95,
+  "canUpgradeAttribution": false,
+  "status": "mapped",
+  "reviewRequired": false,
+  "contentDrift": "low",
+  "origin": {
+    "type": "ai",
+    "summary": "Created database models schema for RAG system",
+    "tool": "antigravity-assistant",
+    "sessionId": "ccce6ca7-6ec9-49f1-b7f8-bbb56ce74e3f"
+  },
+  "sessionId": "ccce6ca7-6ec9-49f1-b7f8-bbb56ce74e3f",
+  "scope": "db",
+  "trustLevel": "high",
+  "sourceType": "sdk",
+  "ingestion": "deterministic",
+  "summary": {
+    "intent": "Created database models schema for RAG system",
+    "changeType": "addition",
+    "risk": "low",
+    "shortSummary": "77+/0-"
+  },
+  "rawContext": {
+    "linesAdded": 77,
+    "linesRemoved": 0,
+    "fileCount": 1,
+    "sessionId": "ccce6ca7-6ec9-49f1-b7f8-bbb56ce74e3f"
+  }
+}

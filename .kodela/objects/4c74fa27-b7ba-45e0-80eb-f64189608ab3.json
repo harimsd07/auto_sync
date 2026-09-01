@@ -1,0 +1,53 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "4c74fa27-b7ba-45e0-80eb-f64189608ab3",
+  "filePath": "/home/irah/kodela_autosync/backend/app/services/llm_rag.py",
+  "astAnchor": null,
+  "contentHash": "768f72410e3698e142acfdc2ececfb1e56780150d9f2ff1a2102d232469cf61c",
+  "lineRange": {
+    "start": 1,
+    "end": 102
+  },
+  "note": "kdl-aesgcm:v1:8636a1b0:rE-jEuK1YYgF6FKC:fKIuNvLLJOpjv50XJo3yKw:xKcprs1q1qBBVv4PNFAG_x14gkg9jPnLZrmll6lkGn_xzHBMsJcHbThAh0_JZkSuLBT7qEEto_T8vYkA5vGm13Wxkn-KRyHPmh4aA8_-DZRQUDMEePDWJBzx3hx2SgWhFyMenSBznTWwT3KoQJ_fkN7REJGnzLUyKTp6ZOIqVSYPgCCVfixqR9oioeiVFrI9eBG7oTWpsKM",
+  "author": "ai-agent",
+  "createdAt": "2026-09-01T06:46:22.379Z",
+  "updatedAt": "2026-09-01T06:46:22.379Z",
+  "severity": "low",
+  "tags": [
+    "per-file-context",
+    "session:ccce6ca7-6ec9-49f1-b7f8-bbb56ce74e3f",
+    "ai",
+    "antigravity-assistant"
+  ],
+  "source": "ai",
+  "aiTool": "antigravity-assistant",
+  "confidence": 0.95,
+  "attributionConfidence": 0.95,
+  "canUpgradeAttribution": false,
+  "status": "mapped",
+  "reviewRequired": false,
+  "contentDrift": "low",
+  "origin": {
+    "type": "ai",
+    "summary": "Created RAG orchestration and streaming service",
+    "tool": "antigravity-assistant",
+    "sessionId": "ccce6ca7-6ec9-49f1-b7f8-bbb56ce74e3f"
+  },
+  "sessionId": "ccce6ca7-6ec9-49f1-b7f8-bbb56ce74e3f",
+  "scope": "general",
+  "trustLevel": "high",
+  "sourceType": "sdk",
+  "ingestion": "deterministic",
+  "summary": {
+    "intent": "Created RAG orchestration and streaming service",
+    "changeType": "addition",
+    "risk": "low",
+    "shortSummary": "102+/0-"
+  },
+  "rawContext": {
+    "linesAdded": 102,
+    "linesRemoved": 0,
+    "fileCount": 1,
+    "sessionId": "ccce6ca7-6ec9-49f1-b7f8-bbb56ce74e3f"
+  }
+}

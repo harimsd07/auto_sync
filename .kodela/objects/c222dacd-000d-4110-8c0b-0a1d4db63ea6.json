@@ -1,0 +1,53 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "c222dacd-000d-4110-8c0b-0a1d4db63ea6",
+  "filePath": "/home/irah/kodela_autosync/docker-compose.yml",
+  "astAnchor": null,
+  "contentHash": "74e948b426106cc1eb1a092db602b687d0254f33777f1144501f54d2be822e07",
+  "lineRange": {
+    "start": 1,
+    "end": 42
+  },
+  "note": "kdl-aesgcm:v1:8636a1b0:2f2UeGhOqCJGX9XJ:YMTEhRp_1QqOPvb628hvNQ:dlhvLs9USRVRVQvjqekz0Goz8QeVV9sciLttWXPC5h1SX2J6SPVsn0vGUrJWPy68BDn2MNdAE7wYlUe5PI_VvWM8ln1XHC68OhzjlfmqlHazKar5lSOC4NT2jAwx8LrFct5z1ZYdelHNr8gxR-zjdo76hNB_E7gO-5y7sxPsJEKbishcgYXLmGVnSnp284MhYEkc-KUSDIgcerUSPTXb8C6QkaSoqrIc-DfS9kgniew",
+  "author": "ai-agent",
+  "createdAt": "2026-09-01T06:45:01.218Z",
+  "updatedAt": "2026-09-01T06:45:01.218Z",
+  "severity": "low",
+  "tags": [
+    "per-file-context",
+    "session:ccce6ca7-6ec9-49f1-b7f8-bbb56ce74e3f",
+    "ai",
+    "antigravity-assistant"
+  ],
+  "source": "ai",
+  "aiTool": "antigravity-assistant",
+  "confidence": 0.95,
+  "attributionConfidence": 0.95,
+  "canUpgradeAttribution": false,
+  "status": "mapped",
+  "reviewRequired": false,
+  "contentDrift": "low",
+  "origin": {
+    "type": "ai",
+    "summary": "Created docker-compose setup for RAG chatbot dependencies",
+    "tool": "antigravity-assistant",
+    "sessionId": "ccce6ca7-6ec9-49f1-b7f8-bbb56ce74e3f"
+  },
+  "sessionId": "ccce6ca7-6ec9-49f1-b7f8-bbb56ce74e3f",
+  "scope": "infra",
+  "trustLevel": "high",
+  "sourceType": "sdk",
+  "ingestion": "deterministic",
+  "summary": {
+    "intent": "Created docker-compose setup for RAG chatbot dependencies",
+    "changeType": "addition",
+    "risk": "low",
+    "shortSummary": "42+/0-"
+  },
+  "rawContext": {
+    "linesAdded": 42,
+    "linesRemoved": 0,
+    "fileCount": 1,
+    "sessionId": "ccce6ca7-6ec9-49f1-b7f8-bbb56ce74e3f"
+  }
+}

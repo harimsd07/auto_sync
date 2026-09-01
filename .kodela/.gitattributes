@@ -1,0 +1,6 @@
+# Kodela index merge strategy
+# One UUID per line makes concurrent branch additions auto-resolvable.
+# The union merge driver takes lines from both sides of a conflict so
+# that two developers adding annotations on separate branches both
+# survive the merge without manual conflict resolution.
+index.json merge=union

@@ -1,0 +1,13 @@
+{
+  "servers": {
+    "kodela": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@kodela/cli",
+        "mcp",
+        "serve"
+      ]
+    }
+  }
+}

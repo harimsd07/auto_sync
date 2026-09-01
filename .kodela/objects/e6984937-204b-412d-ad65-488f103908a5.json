@@ -1,0 +1,53 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "e6984937-204b-412d-ad65-488f103908a5",
+  "filePath": "/home/irah/kodela_autosync/backend/app/services/chunking.py",
+  "astAnchor": null,
+  "contentHash": "ac8d2eb399afe95b06b8bb16793efd64292f4d2a48ed6f28dfa9abbfdc7d8f42",
+  "lineRange": {
+    "start": 1,
+    "end": 56
+  },
+  "note": "kdl-aesgcm:v1:8636a1b0:CrbTmOE-xzdn6jkO:ek0PORFopRBeFABopQPFpA:9oX2mgeln__2tu3OJo_FwTQZL7LHaRjyGmVKHR7tInZ8sYOp2AEFx4ULykACb-eM7MCKOt9ujluH1BI45sVjXAEEyL3b14UeMMHqcQGzoEfSz6kAyqDo5qy54NBnNO66jALArwRfLMhB6F8Qw41G5s3S7iqBdu0dNhdeOHCvqz2XlSbVL63X0iCGqw",
+  "author": "ai-agent",
+  "createdAt": "2026-09-01T06:46:02.161Z",
+  "updatedAt": "2026-09-01T06:46:02.161Z",
+  "severity": "low",
+  "tags": [
+    "per-file-context",
+    "session:ccce6ca7-6ec9-49f1-b7f8-bbb56ce74e3f",
+    "ai",
+    "antigravity-assistant"
+  ],
+  "source": "ai",
+  "aiTool": "antigravity-assistant",
+  "confidence": 0.95,
+  "attributionConfidence": 0.95,
+  "canUpgradeAttribution": false,
+  "status": "mapped",
+  "reviewRequired": false,
+  "contentDrift": "low",
+  "origin": {
+    "type": "ai",
+    "summary": "Created text chunking service for document ingestion",
+    "tool": "antigravity-assistant",
+    "sessionId": "ccce6ca7-6ec9-49f1-b7f8-bbb56ce74e3f"
+  },
+  "sessionId": "ccce6ca7-6ec9-49f1-b7f8-bbb56ce74e3f",
+  "scope": "general",
+  "trustLevel": "high",
+  "sourceType": "sdk",
+  "ingestion": "deterministic",
+  "summary": {
+    "intent": "Created text chunking service for document ingestion",
+    "changeType": "addition",
+    "risk": "low",
+    "shortSummary": "56+/0-"
+  },
+  "rawContext": {
+    "linesAdded": 56,
+    "linesRemoved": 0,
+    "fileCount": 1,
+    "sessionId": "ccce6ca7-6ec9-49f1-b7f8-bbb56ce74e3f"
+  }
+}

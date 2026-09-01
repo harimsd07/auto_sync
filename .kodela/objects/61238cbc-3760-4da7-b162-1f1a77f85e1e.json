@@ -1,0 +1,53 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "61238cbc-3760-4da7-b162-1f1a77f85e1e",
+  "filePath": "/home/irah/kodela_autosync/.env.example",
+  "astAnchor": null,
+  "contentHash": "4feb5678274e5a9778b4cc1081cd4fc8abec04ec04fbc3f246d31f60002631b2",
+  "lineRange": {
+    "start": 1,
+    "end": 24
+  },
+  "note": "kdl-aesgcm:v1:8636a1b0:CbjEMJKsBXMhc0l4:6bc4nLw9UprLtAJNtRhWqw:ekRk-AI1E7DTkApi4PsIEd8BjBtBLE2WuTbML3mdGIajlUgYT0hPeRgNbAQqOCMDcSU4s_9wFbJvchm-648sPosQoZwhQJaMe-UQZpct1FEJO4m0zmjCeT_zR8glGZmpiHNrlZ7vHy3i9kbCj0KWYkPtL-sr_n5SpfHBZY3b_vV3QISbBvJGVvvt8cA",
+  "author": "ai-agent",
+  "createdAt": "2026-09-01T06:45:13.207Z",
+  "updatedAt": "2026-09-01T06:45:13.207Z",
+  "severity": "low",
+  "tags": [
+    "per-file-context",
+    "session:ccce6ca7-6ec9-49f1-b7f8-bbb56ce74e3f",
+    "ai",
+    "antigravity-assistant"
+  ],
+  "source": "ai",
+  "aiTool": "antigravity-assistant",
+  "confidence": 0.95,
+  "attributionConfidence": 0.95,
+  "canUpgradeAttribution": false,
+  "status": "mapped",
+  "reviewRequired": false,
+  "contentDrift": "low",
+  "origin": {
+    "type": "ai",
+    "summary": "Created environment file template for backend service configuration",
+    "tool": "antigravity-assistant",
+    "sessionId": "ccce6ca7-6ec9-49f1-b7f8-bbb56ce74e3f"
+  },
+  "sessionId": "ccce6ca7-6ec9-49f1-b7f8-bbb56ce74e3f",
+  "scope": "general",
+  "trustLevel": "high",
+  "sourceType": "sdk",
+  "ingestion": "deterministic",
+  "summary": {
+    "intent": "Created environment file template for backend service configuration",
+    "changeType": "addition",
+    "risk": "medium",
+    "shortSummary": "24+/0-"
+  },
+  "rawContext": {
+    "linesAdded": 24,
+    "linesRemoved": 0,
+    "fileCount": 1,
+    "sessionId": "ccce6ca7-6ec9-49f1-b7f8-bbb56ce74e3f"
+  }
+}

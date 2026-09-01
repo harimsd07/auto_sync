@@ -1,0 +1,125 @@
+[watch] Starting… watching /home/irah/kodela_autosync
+[watch] Loaded config from /home/irah/kodela_autosync/kodela.config.json
+[watch] Auto-annotate enabled — new entries will be created for AI changes
+[watch] Loaded 22 ignore pattern(s) from .gitignore / .kodelaignore / config
+[watch] Synthesis sidecar skipped — set ANTHROPIC_API_KEY or OPENAI_API_KEY to enable LLM synthesis
+[watch] Ready — watching for changes
+[watch] Reasoning mode: heuristic (no AI key found — set KODELA_AI_API_KEY, OPENAI_API_KEY, or ANTHROPIC_API_KEY to enable AI reasoning)
+[watch] Pre-populated prevContentMap for 3 file(s)
+[watch] Attribution cold-start: no agent detected in environment — will use heuristics
+[watch] healed 0/0 entries in 10 files (1ms) updated=0 orphaned=0 uncertain=0
+[watch] Auto-annotate: created 6 entries (tool: unknown, conf: 0.50, session: 593c5a1e…)
+[watch] Batch processed: 10 file(s) seen, 6 annotated, 4 skipped (2026-09-01T06:10:48.725Z)
+[watch] healed 0/0 entries in 1 file (5ms) updated=0 orphaned=0 uncertain=0
+[watch] Batch processed: 1 file(s) seen, 0 annotated, 1 skipped (2026-09-01T06:11:08.852Z)
+[watch] healed 0/2 entries in 2 files (28ms) updated=0 orphaned=2 uncertain=0
+[DRIFT ALERT] ⚠ ORPHANED: memory-bank/activeContext.md (entry 6d20c5e2…, author: harimsd07)
+  Status changed: uncertain → orphaned
+  Run `kodela heal` to reattach or `kodela archive` to dismiss.
+[DRIFT ALERT] ⚠ ORPHANED: memory-bank/progress.md (entry 6c648f47…, author: harimsd07)
+  Status changed: uncertain → orphaned
+  Run `kodela heal` to reattach or `kodela archive` to dismiss.
+[watch] Batch processed: 3 file(s) seen, 0 annotated, 3 skipped (2026-09-01T06:11:09.487Z)
+[watch] healed 0/0 entries in 1 file (4ms) updated=0 orphaned=0 uncertain=0
+[watch] Auto-annotate: created 1 entry (tool: unknown, conf: 0.50, session: f89fd732…)
+[watch] Batch processed: 1 file(s) seen, 1 annotated, 0 skipped (2026-09-01T06:14:33.485Z)
+[watch] healed 0/1 entries in 1 file (17ms) updated=0 orphaned=1 uncertain=0
+[DRIFT ALERT] ⚠ ORPHANED: RAG_CHATBOT_DESIGN.md (entry 6fdae716…, author: harimsd07)
+  Status changed: uncertain → orphaned
+  Run `kodela heal` to reattach or `kodela archive` to dismiss.
+[watch] Batch processed: 1 file(s) seen, 0 annotated, 1 skipped (2026-09-01T06:14:49.757Z)
+[watch] healed 0/0 entries in 1 file (6ms) updated=0 orphaned=0 uncertain=0
+[watch] Batch processed: 1 file(s) seen, 0 annotated, 1 skipped (2026-09-01T06:31:47.951Z)
+[watch] healed 0/2 entries in 2 files (26ms) updated=0 orphaned=2 uncertain=0
+[watch] Batch processed: 3 file(s) seen, 0 annotated, 3 skipped (2026-09-01T06:31:48.580Z)
+[watch] healed 0/0 entries in 1 file (3ms) updated=0 orphaned=0 uncertain=0
+[watch] Batch processed: 1 file(s) seen, 0 annotated, 1 skipped (2026-09-01T06:31:49.658Z)
+[watch] healed 0/0 entries in 1 file (5ms) updated=0 orphaned=0 uncertain=0
+[watch] Batch processed: 1 file(s) seen, 0 annotated, 1 skipped (2026-09-01T06:31:51.212Z)
+[watch] healed 0/0 entries in 1 file (3ms) updated=0 orphaned=0 uncertain=0
+[watch] Batch processed: 1 file(s) seen, 0 annotated, 1 skipped (2026-09-01T06:31:52.296Z)
+[watch] healed 0/0 entries in 1 file (4ms) updated=0 orphaned=0 uncertain=0
+[watch] Batch processed: 1 file(s) seen, 0 annotated, 1 skipped (2026-09-01T06:31:55.752Z)
+[watch] healed 0/0 entries in 1 file (6ms) updated=0 orphaned=0 uncertain=0
+[watch] Batch processed: 1 file(s) seen, 0 annotated, 1 skipped (2026-09-01T06:31:57.506Z)
+[watch] healed 0/0 entries in 1 file (3ms) updated=0 orphaned=0 uncertain=0
+[watch] Batch processed: 1 file(s) seen, 0 annotated, 1 skipped (2026-09-01T06:32:01.441Z)
+[watch] healed 0/0 entries in 1 file (3ms) updated=0 orphaned=0 uncertain=0
+[watch] Batch processed: 1 file(s) seen, 0 annotated, 1 skipped (2026-09-01T06:32:03.387Z)
+[watch] healed 0/0 entries in 1 file (5ms) updated=0 orphaned=0 uncertain=0
+[watch] Batch processed: 1 file(s) seen, 0 annotated, 1 skipped (2026-09-01T06:32:31.303Z)
+[watch] healed 0/1 entries in 1 file (13ms) updated=0 orphaned=1 uncertain=0
+[watch] Batch processed: 1 file(s) seen, 0 annotated, 1 skipped (2026-09-01T06:32:31.807Z)
+[watch] healed 0/0 entries in 1 file (5ms) updated=0 orphaned=0 uncertain=0
+[watch] Batch processed: 1 file(s) seen, 0 annotated, 1 skipped (2026-09-01T06:32:49.879Z)
+[watch] healed 0/0 entries in 1 file (6ms) updated=0 orphaned=0 uncertain=0
+[watch] Batch processed: 1 file(s) seen, 0 annotated, 1 skipped (2026-09-01T06:32:54.722Z)
+[watch] healed 0/0 entries in 1 file (6ms) updated=0 orphaned=0 uncertain=0
+[watch] Auto-annotate: created 1 entry (tool: unknown, conf: 0.50, session: e271c683…)
+[watch] Batch processed: 1 file(s) seen, 1 annotated, 0 skipped (2026-09-01T06:40:17.019Z)
+[watch] healed 0/0 entries in 1 file (3ms) updated=0 orphaned=0 uncertain=0
+[watch] Auto-annotate: created 1 entry (tool: unknown, conf: 0.00, session: f093598c…)
+[watch] Batch processed: 1 file(s) seen, 1 annotated, 0 skipped (2026-09-01T06:44:26.320Z)
+[watch] healed 0/2 entries in 2 files (21ms) updated=0 orphaned=2 uncertain=0
+[watch] Batch processed: 3 file(s) seen, 0 annotated, 3 skipped (2026-09-01T06:44:26.932Z)
+[watch] healed 0/0 entries in 1 file (5ms) updated=0 orphaned=0 uncertain=0
+[watch] Batch processed: 1 file(s) seen, 0 annotated, 1 skipped (2026-09-01T06:45:04.506Z)
+[watch] healed 0/2 entries in 2 files (25ms) updated=0 orphaned=2 uncertain=0
+[watch] Batch processed: 3 file(s) seen, 0 annotated, 3 skipped (2026-09-01T06:45:05.136Z)
+[watch] healed 0/0 entries in 1 file (5ms) updated=0 orphaned=0 uncertain=0
+[watch] Batch processed: 1 file(s) seen, 0 annotated, 1 skipped (2026-09-01T06:45:18.741Z)
+[watch] healed 0/0 entries in 1 file (6ms) updated=0 orphaned=0 uncertain=0
+[watch] Batch processed: 1 file(s) seen, 0 annotated, 1 skipped (2026-09-01T06:45:27.132Z)
+[watch] healed 0/2 entries in 2 files (23ms) updated=0 orphaned=2 uncertain=0
+[watch] Batch processed: 2 file(s) seen, 0 annotated, 2 skipped (2026-09-01T06:45:27.755Z)
+[watch] healed 0/0 entries in 1 file (4ms) updated=0 orphaned=0 uncertain=0
+[watch] Batch processed: 1 file(s) seen, 0 annotated, 1 skipped (2026-09-01T06:45:35.123Z)
+[watch] healed 0/0 entries in 1 file (6ms) updated=0 orphaned=0 uncertain=0
+[watch] Auto-annotate: created 1 entry (tool: unknown, conf: 0.50, session: f093598c…)
+[watch] Batch processed: 1 file(s) seen, 1 annotated, 0 skipped (2026-09-01T06:45:47.462Z)
+[watch] healed 0/2 entries in 2 files (24ms) updated=0 orphaned=2 uncertain=0
+[watch] Batch processed: 2 file(s) seen, 0 annotated, 2 skipped (2026-09-01T06:45:48.071Z)
+[watch] healed 0/0 entries in 1 file (8ms) updated=0 orphaned=0 uncertain=0
+[watch] Auto-annotate: created 1 entry (tool: unknown, conf: 0.50, session: f093598c…)
+[watch] Batch processed: 1 file(s) seen, 1 annotated, 0 skipped (2026-09-01T06:45:56.597Z)
+[watch] healed 0/0 entries in 1 file (7ms) updated=0 orphaned=0 uncertain=0
+[watch] Auto-annotate: created 1 entry (tool: unknown, conf: 0.50, session: f093598c…)
+[watch] Batch processed: 1 file(s) seen, 1 annotated, 0 skipped (2026-09-01T06:46:06.508Z)
+[watch] healed 0/0 entries in 1 file (8ms) updated=0 orphaned=0 uncertain=0
+[watch] Auto-annotate: created 1 entry (tool: unknown, conf: 0.50, session: f093598c…)
+[watch] Batch processed: 1 file(s) seen, 1 annotated, 0 skipped (2026-09-01T06:46:17.124Z)
+[watch] healed 0/2 entries in 2 files (27ms) updated=0 orphaned=2 uncertain=0
+[watch] Batch processed: 2 file(s) seen, 0 annotated, 2 skipped (2026-09-01T06:46:17.735Z)
+[watch] healed 0/0 entries in 1 file (8ms) updated=0 orphaned=0 uncertain=0
+[watch] Auto-annotate: created 1 entry (tool: unknown, conf: 0.50, session: f093598c…)
+[watch] Batch processed: 1 file(s) seen, 1 annotated, 0 skipped (2026-09-01T06:46:25.744Z)
+[watch] healed 0/0 entries in 1 file (12ms) updated=0 orphaned=0 uncertain=0
+[watch] Auto-annotate: created 1 entry (tool: unknown, conf: 0.50, session: f093598c…)
+[watch] Batch processed: 1 file(s) seen, 1 annotated, 0 skipped (2026-09-01T06:46:35.772Z)
+[watch] healed 0/0 entries in 1 file (12ms) updated=0 orphaned=0 uncertain=0
+[watch] Auto-annotate: created 1 entry (tool: unknown, conf: 0.50, session: f093598c…)
+[watch] Batch processed: 1 file(s) seen, 1 annotated, 0 skipped (2026-09-01T06:46:45.812Z)
+[watch] healed 0/2 entries in 2 files (27ms) updated=0 orphaned=2 uncertain=0
+[watch] Batch processed: 2 file(s) seen, 0 annotated, 2 skipped (2026-09-01T06:46:46.424Z)
+[watch] healed 0/0 entries in 1 file (13ms) updated=0 orphaned=0 uncertain=0
+[watch] Auto-annotate: created 1 entry (tool: unknown, conf: 0.50, session: f093598c…)
+[watch] Batch processed: 1 file(s) seen, 1 annotated, 0 skipped (2026-09-01T06:46:56.249Z)
+[watch] healed 0/0 entries in 1 file (12ms) updated=0 orphaned=0 uncertain=0
+[watch] Batch processed: 1 file(s) seen, 0 annotated, 1 skipped (2026-09-01T06:47:05.652Z)
+[watch] healed 0/0 entries in 1 file (12ms) updated=0 orphaned=0 uncertain=0
+[watch] Batch processed: 1 file(s) seen, 0 annotated, 1 skipped (2026-09-01T06:47:14.474Z)
+[watch] healed 0/2 entries in 2 files (29ms) updated=0 orphaned=2 uncertain=0
+[watch] Batch processed: 2 file(s) seen, 0 annotated, 2 skipped (2026-09-01T06:47:15.101Z)
+[watch] healed 0/0 entries in 1 file (12ms) updated=0 orphaned=0 uncertain=0
+[watch] Auto-annotate: created 1 entry (tool: unknown, conf: 0.00, session: f093598c…)
+[watch] Batch processed: 1 file(s) seen, 1 annotated, 0 skipped (2026-09-01T06:47:24.515Z)
+[watch] healed 0/0 entries in 1 file (20ms) updated=0 orphaned=0 uncertain=0
+[watch] Auto-annotate: created 1 entry (tool: unknown, conf: 0.50, session: f093598c…)
+[watch] Batch processed: 1 file(s) seen, 1 annotated, 0 skipped (2026-09-01T06:47:39.790Z)
+[watch] healed 0/2 entries in 2 files (31ms) updated=0 orphaned=2 uncertain=0
+[watch] Batch processed: 2 file(s) seen, 0 annotated, 2 skipped (2026-09-01T06:47:40.393Z)
+[watch] healed 0/0 entries in 6 files (17ms) updated=0 orphaned=0 uncertain=0
+[kodela/watcher] WARN Batch size exceeded 500 files — flushing early to prevent overload.
+[watch] Batch processed: 6 file(s) seen, 0 annotated, 6 skipped (2026-09-01T06:47:52.864Z)
+[watch] healed 0/0 entries in 501 files (298ms) updated=0 orphaned=0 uncertain=0
+[watch] healed 0/0 entries in 446 files (14ms) updated=0 orphaned=0 uncertain=0

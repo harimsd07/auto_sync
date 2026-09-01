@@ -1,0 +1,53 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "8d7be7ec-c78f-460b-b764-14279959c8d7",
+  "filePath": "/home/irah/kodela_autosync/backend/app/api/v1/endpoints/chat.py",
+  "astAnchor": null,
+  "contentHash": "88f41cbe9e7b9f819ac97aa2bc407328c1e8019169ccb332f737c1be64131f2a",
+  "lineRange": {
+    "start": 1,
+    "end": 77
+  },
+  "note": "kdl-aesgcm:v1:8636a1b0:w9mRdWumJo8HOfyT:HurgBCMFjBLAppbWWRGX9A:asGBfVzf56u5ZLOYn6NWeTCI90irevooa1QSmhfiJfP0mUXHwELE_uqz88_2z-ULAqdHtuHsWFvCYx29HgVK6uRN40E_Qwe_L6pscs4JuTu1qd9dVc57aQeUJX1FkBx2gRb-tfWkXDKtORpAemjt7iqHfh1SqSn5_ESfXvYKwwjisc1yqTq-BhWdWYPNelgm7g",
+  "author": "ai-agent",
+  "createdAt": "2026-09-01T06:47:00.789Z",
+  "updatedAt": "2026-09-01T06:47:00.789Z",
+  "severity": "low",
+  "tags": [
+    "per-file-context",
+    "session:ccce6ca7-6ec9-49f1-b7f8-bbb56ce74e3f",
+    "ai",
+    "antigravity-assistant"
+  ],
+  "source": "ai",
+  "aiTool": "antigravity-assistant",
+  "confidence": 0.95,
+  "attributionConfidence": 0.95,
+  "canUpgradeAttribution": false,
+  "status": "mapped",
+  "reviewRequired": false,
+  "contentDrift": "low",
+  "origin": {
+    "type": "ai",
+    "summary": "Created SSE streaming chat API endpoint",
+    "tool": "antigravity-assistant",
+    "sessionId": "ccce6ca7-6ec9-49f1-b7f8-bbb56ce74e3f"
+  },
+  "sessionId": "ccce6ca7-6ec9-49f1-b7f8-bbb56ce74e3f",
+  "scope": "api",
+  "trustLevel": "high",
+  "sourceType": "sdk",
+  "ingestion": "deterministic",
+  "summary": {
+    "intent": "Created SSE streaming chat API endpoint",
+    "changeType": "addition",
+    "risk": "low",
+    "shortSummary": "77+/0-"
+  },
+  "rawContext": {
+    "linesAdded": 77,
+    "linesRemoved": 0,
+    "fileCount": 1,
+    "sessionId": "ccce6ca7-6ec9-49f1-b7f8-bbb56ce74e3f"
+  }
+}

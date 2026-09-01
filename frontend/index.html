@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Knowledge Grounded RAG AI Suite</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#eef2ff',
+              100: '#e0e7ff',
+              500: '#6366f1',
+              600: '#4f46e5',
+              700: '#4338ca',
+              900: '#312e81',
+            },
+            surface: {
+              800: '#1e1e2e',
+              900: '#11111b',
+              950: '#0b0b12',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #0b0b12;
+      color: #cdd6f4;
+    }
+    .glass-panel {
+      background: rgba(30, 30, 46, 0.65);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .glass-card {
+      background: rgba(45, 45, 68, 0.4);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: rgba(0, 0, 0, 0.1);
+    }
+    ::-webkit-scrollbar-thumb {
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 3px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: rgba(255, 255, 255, 0.3);
+    }
+  </style>
+</head>
+<body class="h-screen flex overflow-hidden">
+
+  <!-- Sidebar Container -->
+  <aside class="w-80 border-r border-white/10 glass-panel flex flex-col justify-between hidden md:flex z-20">
+    <div>
+      <!-- App Header -->
+      <div class="p-5 flex items-center justify-between border-b border-white/10">
+        <div class="flex items-center space-x-3">
+          <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-500 to-purple-600 flex items-center justify-center text-white shadow-lg shadow-indigo-500/20">
+            <i class="fa-solid me-0 fa-brain text-xl"></i>
+          </div>
+          <div>
+            <h1 class="font-bold text-white tracking-wide">RAG AI Assistant</h1>
+            <span class="text-xs text-indigo-400 font-medium">Grounding Engine v1.0</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="p-4 space-y-2">
+        <button id="newChatBtn" class="w-full py-2.5 px-4 bg-indigo-600 hover:bg-indigo-500 text-white rounded-xl font-medium transition flex items-center justify-center space-x-2 shadow-lg shadow-indigo-600/30">
+          <i class="fa-solid fa-plus text-sm"></i>
+          <span>New Conversation</span>
+        </button>
+        <button id="openIngestModalBtn" class="w-full py-2.5 px-4 bg-white/5 hover:bg-white/10 text-white border border-white/10 rounded-xl font-medium transition flex items-center justify-center space-x-2">
+          <i class="fa-solid fa-file-arrow-up text-indigo-400"></i>
+          <span>Ingest Knowledge Doc</span>
+        </button>
+      </div>
+
+      <!-- Conversation History List -->
+      <div class="px-4 py-2">
+        <h2 class="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">Recent Sessions</h2>
+        <div id="conversationList" class="space-y-1 overflow-y-auto max-h-[380px] pr-1">
+          <!-- Dynamic conversation items -->
+          <div class="p-3 rounded-xl bg-white/5 border border-white/10 text-white text-sm cursor-pointer flex items-center justify-between">
+            <div class="flex items-center space-x-2 truncate">
+              <i class="fa-regular fa-message text-indigo-400"></i>
+              <span class="truncate">General Assistant Session</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Indexed Knowledge Section -->
+    <div class="p-4 border-t border-white/10 bg-black/20">
+      <div class="flex items-center justify-between mb-2">
+        <span class="text-xs font-semibold text-gray-400 uppercase tracking-wider">Indexed Documents</span>
+        <span id="docCountBadge" class="text-xs bg-indigo-500/20 text-indigo-300 px-2 py-0.5 rounded-full font-mono">0</span>
+      </div>
+      <div id="documentMiniList" class="space-y-1.5 max-h-32 overflow-y-auto pr-1">
+        <p class="text-xs text-gray-500 italic">No documents indexed yet.</p>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Chat & Workspace Area -->
+  <main class="flex-1 flex flex-col h-full bg-gradient-to-b from-surface-900 to-surface-950">
+    
+    <!-- Top Header Bar -->
+    <header class="h-16 border-b border-white/10 px-6 flex items-center justify-between glass-panel z-10">
+      <div class="flex items-center space-x-3">
+        <button id="mobileToggle" class="md:hidden text-gray-400 hover:text-white">
+          <i class="fa-solid fa-bars text-lg"></i>
+        </button>
+        <div>
+          <h2 id="activeSessionTitle" class="font-semibold text-white">General Assistant Session</h2>
+          <div class="flex items-center space-x-2 text-xs text-gray-400">
+            <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            <span>Vector Grounding Active</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex items-center space-x-3">
+        <span class="text-xs bg-white/5 border border-white/10 text-gray-300 px-3 py-1.5 rounded-lg flex items-center space-x-2">
+          <i class="fa-solid fa-bolt text-amber-400"></i>
+          <span>Hybrid Vector Search</span>
+        </span>
+      </div>
+    </header>
+
+    <!-- Chat Messages Scroll Container -->
+    <div id="chatMessages" class="flex-1 overflow-y-auto p-6 space-y-6">
+      
+      <!-- Welcome Card -->
+      <div class="max-w-2xl mx-auto glass-card p-6 rounded-2xl text-center border border-white/10 my-8">
+        <div class="w-12 h-12 rounded-2xl bg-indigo-500/20 text-indigo-400 flex items-center justify-center mx-auto mb-4 text-2xl">
+          <i class="fa-solid fa-brain"></i>
+        </div>
+        <h3 class="text-xl font-bold text-white mb-2">Welcome to RAG AI Assistant</h3>
+        <p class="text-sm text-gray-400 mb-4">
+          Ask questions grounded on your uploaded documents. Vector similarity search will retrieve relevant passages to form context-backed responses.
+        </p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-left">
+          <div class="p-3 bg-white/5 rounded-xl border border-white/5 text-xs hover:border-indigo-500/30 cursor-pointer" onclick="setInput('What is Retrieval-Augmented Generation?')">
+            <span class="font-semibold text-white block mb-1">🔍 Explain RAG</span>
+            <span class="text-gray-400">Overview of vector search and grounding.</span>
+          </div>
+          <div class="p-3 bg-white/5 rounded-xl border border-white/5 text-xs hover:border-indigo-500/30 cursor-pointer" onclick="setInput('How does document chunking work?')">
+            <span class="font-semibold text-white block mb-1">📄 Text Chunking</span>
+            <span class="text-gray-400">Overlapping token windows strategy.</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Citation Sources Drawer / Preview Box -->
+    <div id="sourcesDrawer" class="hidden px-6 py-3 border-t border-white/10 bg-indigo-950/30 border-indigo-500/20">
+      <div class="flex items-center justify-between mb-2">
+        <span class="text-xs font-semibold text-indigo-300 flex items-center space-x-1.5">
+          <i class="fa-solid fa-quote-left"></i>
+          <span>Retrieved Context Sources</span>
+        </span>
+        <button onclick="toggleSourcesDrawer()" class="text-xs text-gray-400 hover:text-white">&times; Close</button>
+      </div>
+      <div id="sourcesContainer" class="flex space-x-3 overflow-x-auto pb-1">
+        <!-- Dynamic source pills -->
+      </div>
+    </div>
+
+    <!-- Input Bar -->
+    <div class="p-4 border-t border-white/10 glass-panel">
+      <form id="chatForm" class="max-w-4xl mx-auto flex items-center space-x-3">
+        <div class="relative flex-1">
+          <input
+            type="text"
+            id="queryInput"
+            placeholder="Type your message or query your indexed knowledge base..."
+            class="w-full bg-white/5 border border-white/10 focus:border-indigo-500 rounded-2xl py-3.5 pl-4 pr-12 text-sm text-white placeholder-gray-500 focus:outline-none transition"
+            autocomplete="off"
+            required
+          />
+          <button
+            type="submit"
+            id="sendBtn"
+            class="absolute right-2 top-2 w-9 h-9 bg-indigo-600 hover:bg-indigo-500 text-white rounded-xl flex items-center justify-center transition shadow-lg shadow-indigo-600/30"
+          >
+            <i class="fa-solid fa-paper-plane text-xs"></i>
+          </button>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <!-- Document Ingestion Modal -->
+  <div id="ingestModal" class="fixed inset-0 bg-black/70 backdrop-blur-sm z-50 flex items-center justify-center hidden p-4">
+    <div class="glass-panel w-full max-w-lg rounded-2xl p-6 border border-white/15 relative">
+      <button id="closeIngestModalBtn" class="absolute top-4 right-4 text-gray-400 hover:text-white">
+        <i class="fa-solid fa-xmark text-lg"></i>
+      </button>
+
+      <div class="flex items-center space-x-3 mb-4">
+        <div class="w-10 h-10 rounded-xl bg-indigo-500/20 text-indigo-400 flex items-center justify-center">
+          <i class="fa-solid fa-file-circle-plus text-xl"></i>
+        </div>
+        <div>
+          <h3 class="font-bold text-white text-lg">Ingest Knowledge Document</h3>
+          <p class="text-xs text-gray-400">Add custom text to your vector index for semantic retrieval</p>
+        </div>
+      </div>
+
+      <form id="ingestForm" class="space-y-4">
+        <div>
+          <label class="block text-xs font-semibold text-gray-300 mb-1">Document Title</label>
+          <input
+            type="text"
+            id="docTitleInput"
+            placeholder="e.g., Company Support Policy 2026"
+            class="w-full bg-white/5 border border-white/10 rounded-xl p-2.5 text-sm text-white focus:border-indigo-500 focus:outline-none"
+            required
+          />
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-gray-300 mb-1">Content / Document Text</label>
+          <textarea
+            id="docContentInput"
+            rows="6"
+            placeholder="Paste raw text, manual markdown, or document specifications here..."
+            class="w-full bg-white/5 border border-white/10 rounded-xl p-2.5 text-sm text-white focus:border-indigo-500 focus:outline-none font-mono"
+            required
+          ></textarea>
+        </div>
+
+        <div class="pt-2 flex justify-end space-x-3">
+          <button type="button" id="cancelIngestBtn" class="px-4 py-2 rounded-xl text-sm bg-white/5 hover:bg-white/10 text-gray-300">
+            Cancel
+          </button>
+          <button type="submit" class="px-5 py-2 rounded-xl text-sm bg-indigo-600 hover:bg-indigo-500 text-white font-medium shadow-lg shadow-indigo-600/30 flex items-center space-x-2">
+            <i class="fa-solid fa-gears"></i>
+            <span>Process & Index</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    const API_BASE = 'http://localhost:8000/api/v1';
+    let currentConversationId = 'conv_' + Math.random().toString(36).substring(2, 9);
+    let activeUser = 'default_user';
+
+    // UI Elements
+    const chatMessages = document.getElementById('chatMessages');
+    const chatForm = document.getElementById('chatForm');
+    const queryInput = document.getElementById('queryInput');
+    const conversationList = document.getElementById('conversationList');
+    const documentMiniList = document.getElementById('documentMiniList');
+    const docCountBadge = document.getElementById('docCountBadge');
+    
+    // Ingest Modal Elements
+    const ingestModal = document.getElementById('ingestModal');
+    const openIngestModalBtn = document.getElementById('openIngestModalBtn');
+    const closeIngestModalBtn = document.getElementById('closeIngestModalBtn');
+    const cancelIngestBtn = document.getElementById('cancelIngestBtn');
+    const ingestForm = document.getElementById('ingestForm');
+
+    // Init Application
+    document.addEventListener('DOMContentLoaded', () => {
+      loadConversations();
+      loadDocuments();
+    });
+
+    // Ingest Modal Handlers
+    openIngestModalBtn.onclick = () => ingestModal.classList.remove('hidden');
+    closeIngestModalBtn.onclick = () => ingestModal.classList.add('hidden');
+    cancelIngestBtn.onclick = () => ingestModal.classList.add('hidden');
+
+    function setInput(text) {
+      queryInput.value = text;
+      queryInput.focus();
+    }
+
+    // Handle Document Ingestion Form
+    ingestForm.onsubmit = async (e) => {
+      e.preventDefault();
+      const title = document.getElementById('docTitleInput').value.trim();
+      const content = document.getElementById('docContentInput').value.trim();
+
+      if (!title || !content) return;
+
+      try {
+        const res = await fetch(`${API_BASE}/documents/upload-text`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ user_id: activeUser, title, content, source: 'user_upload' })
+        });
+
+        if (res.ok) {
+          ingestModal.classList.add('hidden');
+          ingestForm.reset();
+          loadDocuments();
+          alert('Document indexed into vector store successfully!');
+        } else {
+          alert('Error indexing document.');
+        }
+      } catch (err) {
+        console.error('Ingest error:', err);
+        alert('Could not connect to backend service at localhost:8000.');
+      }
+    };
+
+    // Load Documents List
+    async function loadDocuments() {
+      try {
+        const res = await fetch(`${API_BASE}/documents/?user_id=${activeUser}`);
+        if (res.ok) {
+          const docs = await res.json();
+          docCountBadge.innerText = docs.length;
+          if (docs.length === 0) {
+            documentMiniList.innerHTML = `<p class="text-xs text-gray-500 italic">No documents indexed yet.</p>`;
+            return;
+          }
+          documentMiniList.innerHTML = docs.map(d => `
+            <div class="p-2 rounded-lg bg-white/5 border border-white/5 flex items-center justify-between text-xs">
+              <div class="truncate flex items-center space-x-2">
+                <i class="fa-solid fa-file-lines text-indigo-400"></i>
+                <span class="truncate text-gray-300 font-medium">${d.title}</span>
+              </div>
+              <span class="text-[10px] bg-indigo-500/20 text-indigo-300 px-1.5 py-0.5 rounded font-mono">${d.chunk_count} chunks</span>
+            </div>
+          `).join('');
+        }
+      } catch (err) {
+        console.warn('Could not fetch documents:', err);
+      }
+    }
+
+    // Load Conversations List
+    async function loadConversations() {
+      try {
+        const res = await fetch(`${API_BASE}/conversations/?user_id=${activeUser}`);
+        if (res.ok) {
+          const convs = await res.json();
+          if (convs.length > 0) {
+            conversationList.innerHTML = convs.map(c => `
+              <div class="p-2.5 rounded-xl border transition ${c.id === currentConversationId ? 'bg-indigo-600/20 border-indigo-500/50 text-white' : 'bg-white/5 border-white/5 hover:bg-white/10 text-gray-300'} text-xs cursor-pointer flex items-center justify-between" onclick="switchConversation('${c.id}', '${c.title.replace(/'/g, "\\'")}')">
+                <div class="flex items-center space-x-2 truncate">
+                  <i class="fa-regular fa-message text-indigo-400"></i>
+                  <span class="truncate font-medium">${c.title}</span>
+                </div>
+              </div>
+            `).join('');
+          }
+        }
+      } catch (err) {
+        console.warn('Could not fetch conversations:', err);
+      }
+    }
+
+    function switchConversation(id, title) {
+      currentConversationId = id;
+      document.getElementById('activeSessionTitle').innerText = title;
+      chatMessages.innerHTML = '';
+      loadConversations();
+    }
+
+    // Handle Streaming Chat Submission
+    chatForm.onsubmit = async (e) => {
+      e.preventDefault();
+      const message = queryInput.value.trim();
+      if (!message) return;
+
+      queryInput.value = '';
+
+      // Append User Bubble
+      appendMessageBubble('user', message);
+
+      // Create Assistant Bubble Placeholder
+      const assistantBubble = appendMessageBubble('assistant', '');
+      const contentSpan = assistantBubble.querySelector('.msg-content');
+
+      try {
+        const response = await fetch(`${API_BASE}/chat/stream`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            conversation_id: currentConversationId,
+            user_id: activeUser,
+            message: message,
+            top_k: 4
+          })
+        });
+
+        const reader = response.body.getReader();
+        const decoder = new TextDecoder();
+        let buffer = '';
+
+        while (true) {
+          const { done, value } = await reader.read();
+          if (done) break;
+
+          buffer += decoder.decode(value, { stream: true });
+          const lines = buffer.split('\n\n');
+          buffer = lines.pop() || '';
+
+          for (const line of lines) {
+            if (line.startsWith('data: ')) {
+              const jsonStr = line.replace('data: ', '').trim();
+              if (!jsonStr) continue;
+
+              try {
+                const event = JSON.parse(jsonStr);
+                if (event.type === 'sources') {
+                  renderSources(assistantBubble, event.data);
+                } else if (event.type === 'delta') {
+                  contentSpan.innerText += event.data;
+                  chatMessages.scrollTop = chatMessages.scrollHeight;
+                }
+              } catch (e) {
+                console.error('JSON parse error:', e);
+              }
+            }
+          }
+        }
+      } catch (err) {
+        contentSpan.innerText = "Error: Could not connect to backend server. Make sure FastAPI server is running on http://localhost:8000.";
+      }
+    };
+
+    function appendMessageBubble(role, content) {
+      const wrapper = document.createElement('div');
+      wrapper.className = `flex space-x-3 max-w-3xl ${role === 'user' ? 'ml-auto flex-row-reverse space-x-reverse' : ''}`;
+      
+      const avatar = role === 'user'
+        ? `<div class="w-8 h-8 rounded-xl bg-purple-600 text-white flex items-center justify-center font-bold text-xs shrink-0">U</div>`
+        : `<div class="w-8 h-8 rounded-xl bg-indigo-600 text-white flex items-center justify-center text-xs shrink-0"><i class="fa-solid fa-brain"></i></div>`;
+
+      wrapper.innerHTML = `
+        ${avatar}
+        <div class="glass-card p-4 rounded-2xl ${role === 'user' ? 'bg-indigo-600/30 border-indigo-500/30 text-white' : 'text-gray-200'} text-sm leading-relaxed max-w-xl">
+          <span class="msg-content">${content}</span>
+          <div class="sources-list mt-3 pt-3 border-t border-white/10 hidden"></div>
+        </div>
+      `;
+      
+      chatMessages.appendChild(wrapper);
+      chatMessages.scrollTop = chatMessages.scrollHeight;
+      return wrapper;
+    }
+
+    function renderSources(bubble, sources) {
+      if (!sources || sources.length === 0) return;
+      const sourcesDiv = bubble.querySelector('.sources-list');
+      sourcesDiv.classList.remove('hidden');
+      sourcesDiv.innerHTML = `
+        <span class="text-[11px] font-semibold text-indigo-300 block mb-1 flex items-center space-x-1">
+          <i class="fa-solid fa-paperclip"></i>
+          <span>Grounding Sources (${sources.length})</span>
+        </span>
+        <div class="space-y-1">
+          ${sources.map(s => `
+            <div class="p-2 rounded-lg bg-black/30 text-[11px] text-gray-300 border border-white/5">
+              <span class="font-semibold text-white">${s.title}</span> (Score: ${s.score})
+              <p class="text-gray-400 text-[10px] mt-0.5 line-clamp-2">${s.content_preview}</p>
+            </div>
+          `).join('')}
+        </div>
+      `;
+    }
+  </script>
+</body>
+</html>

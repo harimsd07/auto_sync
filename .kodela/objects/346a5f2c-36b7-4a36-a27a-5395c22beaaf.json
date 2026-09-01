@@ -1,0 +1,53 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "346a5f2c-36b7-4a36-a27a-5395c22beaaf",
+  "filePath": "/home/irah/kodela_autosync/backend/app/services/vector_store.py",
+  "astAnchor": null,
+  "contentHash": "b60fa7236f7eed56cf7cac587efd57f703344f07eccec5b98e04599960373eca",
+  "lineRange": {
+    "start": 1,
+    "end": 65
+  },
+  "note": "kdl-aesgcm:v1:8636a1b0:8-U8colg_8dvkCqz:jCm1-7nV279CtJz0gVqeYw:qY2shRZ5UPP8XjrvrNuEwgOvJ0qStnj6VAq58iMkPTPSoTkv07Sn_xZHbGGgxYRgob2A2WVXoodkcCpgi4Vu18IapJoMgZX3oFJes3-uuvvlYwt4BX7FevHt73ympYYLr_WdDZBdR5-XQLNRyZIZ9xiIRcG23pFTXtw_A_7m3W_GaU89vNhm85F_srbscWKB",
+  "author": "ai-agent",
+  "createdAt": "2026-09-01T06:46:12.547Z",
+  "updatedAt": "2026-09-01T06:46:12.547Z",
+  "severity": "low",
+  "tags": [
+    "per-file-context",
+    "session:ccce6ca7-6ec9-49f1-b7f8-bbb56ce74e3f",
+    "ai",
+    "antigravity-assistant"
+  ],
+  "source": "ai",
+  "aiTool": "antigravity-assistant",
+  "confidence": 0.95,
+  "attributionConfidence": 0.95,
+  "canUpgradeAttribution": false,
+  "status": "mapped",
+  "reviewRequired": false,
+  "contentDrift": "low",
+  "origin": {
+    "type": "ai",
+    "summary": "Created vector store and embedding service module",
+    "tool": "antigravity-assistant",
+    "sessionId": "ccce6ca7-6ec9-49f1-b7f8-bbb56ce74e3f"
+  },
+  "sessionId": "ccce6ca7-6ec9-49f1-b7f8-bbb56ce74e3f",
+  "scope": "general",
+  "trustLevel": "high",
+  "sourceType": "sdk",
+  "ingestion": "deterministic",
+  "summary": {
+    "intent": "Created vector store and embedding service module",
+    "changeType": "addition",
+    "risk": "low",
+    "shortSummary": "65+/0-"
+  },
+  "rawContext": {
+    "linesAdded": 65,
+    "linesRemoved": 0,
+    "fileCount": 1,
+    "sessionId": "ccce6ca7-6ec9-49f1-b7f8-bbb56ce74e3f"
+  }
+}

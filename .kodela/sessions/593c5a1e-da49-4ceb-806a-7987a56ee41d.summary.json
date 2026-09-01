@@ -1,0 +1,37 @@
+{
+  "sessionId": "593c5a1e-da49-4ceb-806a-7987a56ee41d",
+  "intent": "Auto-annotate watcher batch for 10 files: .cursor/mcp.json, .vscode/mcp.json, AGENTS.md (+7 more).",
+  "reasoning": "Added mcp.json\n\nAdded AGENTS.md.\n\nSession scope: 6 files changed (+73/-0 lines), risk medium, confidence 50%.\n\nNo explicit test execution results were captured in session artifacts.",
+  "goal": "Auto-annotate watcher batch for 10 files: .cursor/mcp.json, .vscode/mcp.json, AGENTS.md (+7 more).",
+  "filesChanged": [
+    ".cursor/mcp.json",
+    ".vscode/mcp.json",
+    "AGENTS.md",
+    ".kiro/settings/mcp.json",
+    "memory-bank/activeContext.md",
+    "memory-bank/progress.md"
+  ],
+  "totalLinesAdded": 73,
+  "totalLinesRemoved": 0,
+  "dominantChangeType": "addition",
+  "riskLevel": "medium",
+  "avgConfidence": 0.49666666666666676,
+  "entryCount": 6,
+  "synthesisedAt": "2026-09-01T06:14:33.472Z",
+  "intentSource": "user-goal",
+  "memory": {
+    "whatChanged": [
+      "Added mcp.json",
+      "Added AGENTS.md",
+      "Added activeContext.md",
+      "Changed 6 files (+73/-0 lines).",
+      "Primary files: .cursor/mcp.json, .vscode/mcp.json, AGENTS.md …."
+    ],
+    "whyItMatters": "Added mcp.json",
+    "validationContext": "No explicit test execution results were captured in session artifacts.",
+    "nextActions": [
+      "Re-map 2 orphaned annotations before relying on these references.",
+      "Review 4 uncertain annotations to confirm intent and mapping accuracy."
+    ]
+  }
+}

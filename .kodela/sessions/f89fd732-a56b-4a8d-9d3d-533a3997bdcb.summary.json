@@ -1,0 +1,29 @@
+{
+  "sessionId": "f89fd732-a56b-4a8d-9d3d-533a3997bdcb",
+  "intent": "Auto-annotate watcher batch for 1 file: RAG_CHATBOT_DESIGN.md.",
+  "reasoning": "Added RAG_CHATBOT_DESIGN.md.\n\nSession scope: 1 file changed (+1228/-0 lines), risk low, confidence 45%.\n\nNo explicit test execution results were captured in session artifacts.",
+  "goal": "Auto-annotate watcher batch for 1 file: RAG_CHATBOT_DESIGN.md.",
+  "filesChanged": [
+    "RAG_CHATBOT_DESIGN.md"
+  ],
+  "totalLinesAdded": 1228,
+  "totalLinesRemoved": 0,
+  "dominantChangeType": "addition",
+  "riskLevel": "low",
+  "avgConfidence": 0.45,
+  "entryCount": 1,
+  "synthesisedAt": "2026-09-01T06:40:16.999Z",
+  "intentSource": "user-goal",
+  "memory": {
+    "whatChanged": [
+      "Added RAG_CHATBOT_DESIGN.md",
+      "Changed 1 file (+1228/-0 lines).",
+      "Primary files: RAG_CHATBOT_DESIGN.md."
+    ],
+    "whyItMatters": "Added RAG_CHATBOT_DESIGN.md",
+    "validationContext": "No explicit test execution results were captured in session artifacts.",
+    "nextActions": [
+      "Re-map 1 orphaned annotation before relying on these references."
+    ]
+  }
+}

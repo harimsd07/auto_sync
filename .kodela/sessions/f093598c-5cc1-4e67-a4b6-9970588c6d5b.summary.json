@@ -1,0 +1,41 @@
+{
+  "sessionId": "f093598c-5cc1-4e67-a4b6-9970588c6d5b",
+  "intent": "Auto-annotate watcher batch for 1 file: docker-compose.yml.",
+  "reasoning": "Added docker-compose.yml\n\nAdded models.py.\n\nSession scope: 11 files changed (+1279/-0 lines), risk low, confidence 54%.\n\nNo explicit test execution results were captured in session artifacts.",
+  "goal": "Auto-annotate watcher batch for 1 file: docker-compose.yml.",
+  "filesChanged": [
+    "docker-compose.yml",
+    "backend/app/models/models.py",
+    "backend/app/services/chunking.py",
+    "backend/app/services/vector_store.py",
+    "backend/app/services/llm_rag.py",
+    "backend/app/api/v1/endpoints/auth.py",
+    "backend/app/api/v1/endpoints/documents.py",
+    "backend/app/api/v1/endpoints/conversations.py",
+    "backend/app/api/v1/endpoints/chat.py",
+    "backend/tests/test_api.py",
+    "frontend/index.html"
+  ],
+  "totalLinesAdded": 1279,
+  "totalLinesRemoved": 0,
+  "dominantChangeType": "addition",
+  "riskLevel": "low",
+  "avgConfidence": 0.54,
+  "entryCount": 11,
+  "synthesisedAt": "2026-09-01T06:47:39.777Z",
+  "intentSource": "user-goal",
+  "memory": {
+    "whatChanged": [
+      "Added docker-compose.yml",
+      "Added models.py",
+      "Added chunking.py",
+      "Changed 11 files (+1279/-0 lines).",
+      "Primary files: docker-compose.yml, models/models.py, services/chunking.py …."
+    ],
+    "whyItMatters": "Added docker-compose.yml",
+    "validationContext": "No explicit test execution results were captured in session artifacts.",
+    "nextActions": [
+      "Review 11 uncertain annotations to confirm intent and mapping accuracy."
+    ]
+  }
+}

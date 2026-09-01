@@ -1,0 +1,53 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "cc2b9a92-bf2c-45b5-9cc5-d17be19e99d6",
+  "filePath": "/home/irah/kodela_autosync/backend/app/api/v1/endpoints/conversations.py",
+  "astAnchor": null,
+  "contentHash": "a49cc0c2ccb83cbf8510c16a643243f18f74a7b6250ccb8fb518ac062f8d4dda",
+  "lineRange": {
+    "start": 1,
+    "end": 85
+  },
+  "note": "kdl-aesgcm:v1:8636a1b0:as30jS4LXpzmdAwK:zEvxq3_gvgWb76SzNOkMIw:LWcsUjRMk1mR-_3K_sVwalcPRhzFn54bUVE88vE-pGNKRsx0OjHyN7IuWOValPbdepd7vRir_11dWZ1WgW8zQAszLOv0mpIc_wHrsjAePrQndGlDRRSiFxEhGzvZWPaUOv5sEBtRdfLmh9FAEmeYemyCT3el92nn9HbR619IRaHRnj-gK2QpcPPqMltS_2GrWhty2i326i8",
+  "author": "ai-agent",
+  "createdAt": "2026-09-01T06:46:52.270Z",
+  "updatedAt": "2026-09-01T06:46:52.270Z",
+  "severity": "low",
+  "tags": [
+    "per-file-context",
+    "session:ccce6ca7-6ec9-49f1-b7f8-bbb56ce74e3f",
+    "ai",
+    "antigravity-assistant"
+  ],
+  "source": "ai",
+  "aiTool": "antigravity-assistant",
+  "confidence": 0.95,
+  "attributionConfidence": 0.95,
+  "canUpgradeAttribution": false,
+  "status": "mapped",
+  "reviewRequired": false,
+  "contentDrift": "low",
+  "origin": {
+    "type": "ai",
+    "summary": "Created conversation session management API endpoints",
+    "tool": "antigravity-assistant",
+    "sessionId": "ccce6ca7-6ec9-49f1-b7f8-bbb56ce74e3f"
+  },
+  "sessionId": "ccce6ca7-6ec9-49f1-b7f8-bbb56ce74e3f",
+  "scope": "api",
+  "trustLevel": "high",
+  "sourceType": "sdk",
+  "ingestion": "deterministic",
+  "summary": {
+    "intent": "Created conversation session management API endpoints",
+    "changeType": "addition",
+    "risk": "low",
+    "shortSummary": "85+/0-"
+  },
+  "rawContext": {
+    "linesAdded": 85,
+    "linesRemoved": 0,
+    "fileCount": 1,
+    "sessionId": "ccce6ca7-6ec9-49f1-b7f8-bbb56ce74e3f"
+  }
+}
